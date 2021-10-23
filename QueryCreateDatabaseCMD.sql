@@ -39,11 +39,10 @@ USE `mydb` ;
 -- -----------------------------------------------------
 -- Table `mydb`.`table1`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`table1` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`table1` (
-)
-ENGINE = InnoDB;
+
+
+
 
 USE `cmd` ;
 
