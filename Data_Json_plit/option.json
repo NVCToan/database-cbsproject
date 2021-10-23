@@ -1,0 +1,106 @@
+[
+        {
+            "id": 1,
+            "name": "Hợp đồng kinh tế"
+        },
+        {
+            "id": 2,
+            "name": "Hợp đồng"
+        },
+        {
+            "id": 3,
+            "name": "Cảnh báo/nhắc nhở"
+        },
+        {
+            "id": 4,
+            "name": "Thiết bị"
+        },
+        {
+            "id": 5,
+            "name": "Phụ tùng"
+        },
+        {
+            "id": 6,
+            "name": "Cảm biến"
+        },
+        {
+            "id": 6,
+            "name": "Cảm biến"
+        },
+        {
+            "id": 8,
+            "name": "Cảm biến"
+        },
+        {
+            "id": 9,
+            "name": "Danh mục"
+        },
+        {
+            "id": 10,
+            "name": "Danh mục kiểm tra"
+        },
+        {
+            "id": 11,
+            "name": "Công việc"
+        },
+        {
+            "id": 12,
+            "name": "Đề xuất"
+        },
+        {
+            "id": 13,
+            "name": "Loại đề xuất"
+        },
+        {
+            "id": 14,
+            "name": "Nhân viên"
+        },
+        {
+            "id": 15,
+            "name": "Phòng ban"
+        },
+        {
+            "id": 16,
+            "name": "Chức vụ"
+        },
+        {
+            "id": 17,
+            "name": "Kho"
+        },
+        {
+            "id": 18,
+            "name": "Vai trò"
+        },
+        {
+            "id": 19,
+            "name": "Báo cáo"
+        },
+        {
+            "id": 20,
+            "name": "Khách hàng"
+        },
+        {
+            "id": 21,
+            "name": "Người dùng"
+        },
+        {
+            "id": 22,
+            "name": "Chức năng công ty"
+        },
+        {
+            "id": 23,
+            "name": "Thẻ"
+        },
+        {
+            "id": 24,
+            "name": "Phân loại khách hàng"
+        },
+        {
+            "id": 25,
+            "name": "Sản phẩm"
+        },
+        {
+            "id": 26,
+            "name": "Sản phẩm"
+        }
+    ]

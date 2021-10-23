@@ -1,0 +1,14 @@
+[
+        {
+            "id": 1,
+            "approval_step_name": "Phê duyệt",
+            "approval_step_index": 1,
+            "proposal_types_id": 1
+        },
+        {
+            "id": 2,
+            "approval_step_name": "Kế toán",
+            "approval_step_index": 1,
+            "proposal_types_id": 2
+        }
+    ]

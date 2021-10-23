@@ -1,0 +1,2 @@
+insert into proposal_permissions (proposal_types_id,departments_id,positions_id,employees_id) value(2,NULL,NULL,41);
+insert into proposal_permissions (proposal_types_id,departments_id,positions_id,employees_id) value(2,NULL,NULL,43);

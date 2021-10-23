@@ -1,0 +1,39 @@
+[
+        {
+            "id": 1,
+            "name": "Hoàn tất"
+        },
+        {
+            "id": 2,
+            "name": "Bị từ chối"
+        },
+        {
+            "id": 3,
+            "name": "Đã huỷ"
+        },
+        {
+            "id": 4,
+            "name": "Mới"
+        },
+        {
+            "id": 5,
+            "name": "Đang làm"
+        },
+        {
+            "id": 6,
+            "name": "Chờ xác nhận"
+        },
+        {
+            "id": 7,
+            "name": "Hoàn thành"
+        },
+        {
+            "id": 8,
+            "name": "Quá hạn"
+        },
+        {
+            "id": 9,
+			"name" : "Nothing"
+			
+        }
+    ]

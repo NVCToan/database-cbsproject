@@ -1,0 +1,30 @@
+[
+        {
+            "id": 1,
+            "name": "Xem"
+        },
+        {
+            "id": 2,
+            "name": "Tạo"
+        },
+        {
+            "id": 3,
+            "name": "Sửa"
+        },
+        {
+            "id": 4,
+            "name": "Xoá"
+        },
+        {
+            "id": 5,
+            "name": "Xem hết"
+        },
+        {
+            "id": 6,
+            "name": "Sửa hết"
+        },
+        {
+            "id": 7,
+            "name": "Xoá hết"
+        }
+    ]
