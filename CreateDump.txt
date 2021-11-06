@@ -1,0 +1,1 @@
+mysqldump -u root -p 123456 --databases cmd -r NameofBackup.sql
