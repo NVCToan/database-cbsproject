@@ -1,4 +1,0 @@
-insert into approval_step_details(approval_steps_id,employees_id,departments_id,positions_id) value(1,null,null,16);
-insert into approval_step_details(approval_steps_id,employees_id,departments_id,positions_id) value(1,null,null,7);
-insert into approval_step_details(approval_steps_id,employees_id,departments_id,positions_id) value(1,null,null,10);
-insert into approval_step_details(approval_steps_id,employees_id,departments_id,positions_id) value(1,null,null,13)
