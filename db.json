@@ -1,0 +1,3704 @@
+{
+    "employees": [
+        {
+            "id": "1",
+            "name": "Hùng Thịnh Đinh",
+            "email": "ThyAnh79@yahoo.com",
+            "phoneNumber": "023 9324 5592"
+        },
+        {
+            "id": "2",
+            "name": "An Tường Trịnh",
+            "email": "Khnhan.Phm@yahoo.com",
+            "phoneNumber": "022 0066 6557"
+        },
+        {
+            "id": "3",
+            "name": "Hoàng Duệ Trần I",
+            "email": "NhAnh_Mai@hotmail.com",
+            "phoneNumber": "026 9470 9508"
+        },
+        {
+            "id": "4",
+            "name": "Ms. Thành Thiện Vũ",
+            "email": "Tn.Ng@hotmail.com",
+            "phoneNumber": "026 3632 1049"
+        },
+        {
+            "id": "5",
+            "name": "Ðức Thành Lê",
+            "email": "PhngUyn65@yahoo.com",
+            "phoneNumber": "0279 4142 4708"
+        },
+        {
+            "id": "6",
+            "name": "Thượng Nghị Hồ",
+            "email": "nhKim43@hotmail.com",
+            "phoneNumber": "0256 6920 8794"
+        },
+        {
+            "id": "7",
+            "name": "Ms. Hưng Ðạo Nguyễn",
+            "email": "ThuDuyn_Phan@hotmail.com",
+            "phoneNumber": "0245 1679 8200"
+        },
+        {
+            "id": "8",
+            "name": "Việt Dũng Dương",
+            "email": "KimThng_Vng14@hotmail.com",
+            "phoneNumber": "026 2312 7134"
+        },
+        {
+            "id": "9",
+            "name": "Hiếu Phong Dương",
+            "email": "DngKhnh.Phan@yahoo.com",
+            "phoneNumber": "0295 6465 3055"
+        },
+        {
+            "id": "10",
+            "name": "Thanh Tuấn Vương",
+            "email": "VnHng61@hotmail.com",
+            "phoneNumber": "027 6223 0001"
+        },
+        {
+            "id": "11",
+            "name": "Trung Nguyên Nguyễn",
+            "email": "CngLp_inh@yahoo.com",
+            "phoneNumber": "022 3304 2135"
+        },
+        {
+            "id": "12",
+            "name": "Bình Ðịnh Phùng",
+            "email": "TrcLinh56@hotmail.com",
+            "phoneNumber": "026 8175 7901"
+        },
+        {
+            "id": "13",
+            "name": "Huy Khiêm Mai",
+            "email": "Phn_Trn@yahoo.com",
+            "phoneNumber": "0210 4460 6144"
+        },
+        {
+            "id": "14",
+            "name": "Mrs. Hữu Nghĩa Đặng",
+            "email": "ThiVn94@yahoo.com",
+            "phoneNumber": "029 9593 5529"
+        },
+        {
+            "id": "15",
+            "name": "Quỳnh Nhung Phạm I",
+            "email": "MngLong_Ng39@yahoo.com",
+            "phoneNumber": "0294 7848 4548"
+        },
+        {
+            "id": "16",
+            "name": "Lan Vy Hà",
+            "email": "NhMai.Trng@yahoo.com",
+            "phoneNumber": "0217 2635 1851"
+        },
+        {
+            "id": "17",
+            "name": "Diệu Ngà Bùi",
+            "email": "KhcNinh94@hotmail.com",
+            "phoneNumber": "0278 5831 9727"
+        },
+        {
+            "id": "18",
+            "name": "Hiếu Hạnh Vũ PhD",
+            "email": "VnThng.Phan18@yahoo.com",
+            "phoneNumber": "0223 5664 9908"
+        },
+        {
+            "id": "19",
+            "name": "Lệ Huyền Tăng",
+            "email": "PhcNhn.Hong52@gmail.com",
+            "phoneNumber": "0274 4735 7681"
+        },
+        {
+            "id": "20",
+            "name": "Minh Huấn Đỗ",
+            "email": "MinhKhi.Phm66@yahoo.com",
+            "phoneNumber": "0260 1866 9551"
+        },
+        {
+            "id": "21",
+            "name": "Tịnh Như Ngô",
+            "email": "Tn.Phan@gmail.com",
+            "phoneNumber": "026 0060 0384"
+        },
+        {
+            "id": "22",
+            "name": "Hải Phương Tô",
+            "email": "ThnhCng.H81@hotmail.com",
+            "phoneNumber": "024 5176 3533"
+        },
+        {
+            "id": "23",
+            "name": "Huy Tường Tô",
+            "email": "LiuOanh.Trng@hotmail.com",
+            "phoneNumber": "028 1997 8601"
+        },
+        {
+            "id": "24",
+            "name": "Nhã Yến Tô",
+            "email": "CngHiu27@yahoo.com",
+            "phoneNumber": "0234 0783 5816"
+        },
+        {
+            "id": "25",
+            "name": "Kiên Cường Tăng MD",
+            "email": "KimQuyn_Vng@yahoo.com",
+            "phoneNumber": "026 7006 4223"
+        },
+        {
+            "id": "26",
+            "name": "Nhã Hồng Lâm",
+            "email": "DuyHng56@hotmail.com",
+            "phoneNumber": "029 7852 2092"
+        },
+        {
+            "id": "27",
+            "name": "Bảo Anh Lâm",
+            "email": "GingUyn.Ng25@gmail.com",
+            "phoneNumber": "021 9353 3989"
+        },
+        {
+            "id": "28",
+            "name": "Việt Cương Dương",
+            "email": "DLm.Trnh39@gmail.com",
+            "phoneNumber": "027 2231 3461"
+        },
+        {
+            "id": "29",
+            "name": "Kiên Bình Bùi",
+            "email": "ThDuyt28@gmail.com",
+            "phoneNumber": "0269 0985 0461"
+        },
+        {
+            "id": "30",
+            "name": "Mỹ Ngọc Dương",
+            "email": "KhiTm_Vng@yahoo.com",
+            "phoneNumber": "022 4287 3879"
+        },
+        {
+            "id": "31",
+            "name": "Kim Sa Phạm",
+            "email": "DuyBo_Vng@gmail.com",
+            "phoneNumber": "0296 0190 0409"
+        },
+        {
+            "id": "32",
+            "name": "Mr. Yến Loan Vương",
+            "email": "VitDng_L@hotmail.com",
+            "phoneNumber": "028 5899 0562"
+        },
+        {
+            "id": "33",
+            "name": "Phương Tâm Trần",
+            "email": "KiuDim.H@yahoo.com",
+            "phoneNumber": "023 9445 8427"
+        },
+        {
+            "id": "34",
+            "name": "Thanh Thư Bùi",
+            "email": "ThanhVy13@gmail.com",
+            "phoneNumber": "0298 1083 6068"
+        },
+        {
+            "id": "35",
+            "name": "Ms. Quốc Hải Phùng",
+            "email": "BoGiang_T@gmail.com",
+            "phoneNumber": "026 6671 2725"
+        },
+        {
+            "id": "36",
+            "name": "Miss Ngọc Khanh Phan",
+            "email": "Thnht_Vng36@yahoo.com",
+            "phoneNumber": "0256 1592 5165"
+        },
+        {
+            "id": "37",
+            "name": "Thượng Cường Hoàng",
+            "email": "ThinKim41@hotmail.com",
+            "phoneNumber": "0217 5648 8211"
+        },
+        {
+            "id": "38",
+            "name": "Tiểu Mi Trịnh",
+            "email": "KhnhGiang18@gmail.com",
+            "phoneNumber": "029 1028 1191"
+        },
+        {
+            "id": "39",
+            "name": "Chấn Hùng Phùng",
+            "email": "DuyNhng_H@gmail.com",
+            "phoneNumber": "0221 7287 8299"
+        },
+        {
+            "id": "40",
+            "name": "Ánh Tuyết Đặng PhD",
+            "email": "LanChi5@gmail.com",
+            "phoneNumber": "0228 8621 2541"
+        },
+        {
+            "id": "41",
+            "name": "Nguyễn Minh Dũng",
+            "email": "nguyenminhdungtd98@gmail.com",
+            "phoneNumber": "0763934399"
+        },
+        {
+            "id": "42",
+            "name": "Nguyễn Văn Ký",
+            "email": "nguyenky@gmail.com",
+            "phoneNumber": "03428284832"
+        },
+        {
+            "id": "43",
+            "name": "Nguyễn Võ Công Toàn",
+            "email": "congtoan@gmail.com",
+            "phoneNumber": "0957839282"
+        },
+        {
+            "id": "44",
+            "name": "Thiên Thảo",
+            "email": "thienthao@gmail.com",
+            "phoneNumber": "094883123"
+        },
+        {
+            "id": "45",
+            "name": "Vũ Thị Thu Thảo",
+            "email": "thuthao@gmail.com",
+            "phoneNumber": "0948843123"
+        },
+        {
+            "id": "46",
+            "name": "Nguyễn Duỹ Long",
+            "email": "duylong@gmail.com",
+            "phoneNumber": "0948843123"
+        },
+        {
+            "id": "47",
+            "name": "Nguyễn Thanh Tốt",
+            "email": "thanhtot@gmail.com",
+            "phoneNumber": "0948843123"
+        },
+        {
+            "id": "48",
+            "name": "Minh Hồ",
+            "email": "minhho@gmail.com",
+            "phoneNumber": "091263823"
+        }
+    ],
+    "departments": [
+        {
+            "id": "1",
+            "name": "Ban Quản Lý KTX Cỏ May",
+            "farther_department_id": 0,
+            "manager_id": 0
+        },
+        {
+            "id": "2",
+            "name": "Bảo trì - Bảo dưỡng CSVC KTX",
+            "farther_department_id": 1,
+            "manager_id": 0
+        },
+        {
+            "id": "3",
+            "name": "Đội sửa chữa",
+            "farther_department_id": 2,
+            "manager_id": 0
+        },
+        {
+            "id": "4",
+            "name": "Tầng 1",
+            "farther_department_id": 2,
+            "manager_id": 0
+        },
+        {
+            "id": "5",
+            "name": "Tầng 2",
+            "farther_department_id": 2,
+            "manager_id": 0
+        },
+        {
+            "id": "6",
+            "name": "Tầng 3",
+            "farther_department_id": 2,
+            "manager_id": 0
+        },
+        {
+            "id": "7",
+            "name": "Tầng trệt",
+            "farther_department_id": 2,
+            "manager_id": 0
+        },
+        {
+            "id": "8",
+            "name": "Kiểm tra và giám sát sinh viên",
+            "farther_department_id": 1,
+            "manager_id": 0
+        },
+        {
+            "id": "9",
+            "name": "Tổ chức sự kiện",
+            "farther_department_id": 1,
+            "manager_id": 0
+        },
+        {
+            "id": "10",
+            "name": "Truyền thông",
+            "farther_department_id": 1,
+            "manager_id": 0
+        },
+        {
+            "id": "11",
+            "name": "Sinh viên",
+            "farther_department_id": 1,
+            "manager_id": 0
+        }
+    ],
+    "departments_employees": [
+        {
+            "departmentId": "1",
+            "employeeId": "18",
+            "isManager": true
+        },
+        {
+            "departmentId": "1",
+            "employeeId": "3",
+            "isManager": false
+        },
+        {
+            "departmentId": "1",
+            "employeeId": "26",
+            "isManager": false
+        },
+        {
+            "departmentId": "1",
+            "employeeId": "45",
+            "isManager": false
+        },
+        {
+            "departmentId": "1",
+            "employeeId": "11",
+            "isManager": false
+        },
+        {
+            "departmentId": "1",
+            "employeeId": "43",
+            "isManager": false
+        },
+        {
+            "departmentId": "1",
+            "employeeId": "17",
+            "isManager": false
+        },
+        {
+            "departmentId": "1",
+            "employeeId": "11",
+            "isManager": false
+        },
+        {
+            "departmentId": "1",
+            "employeeId": "25",
+            "isManager": false
+        },
+        {
+            "departmentId": "1",
+            "employeeId": "20",
+            "isManager": false
+        },
+        {
+            "departmentId": "2",
+            "employeeId": "34",
+            "isManager": true
+        },
+        {
+            "departmentId": "2",
+            "employeeId": "2",
+            "isManager": false
+        },
+        {
+            "departmentId": "2",
+            "employeeId": "2",
+            "isManager": false
+        },
+        {
+            "departmentId": "2",
+            "employeeId": "25",
+            "isManager": false
+        },
+        {
+            "departmentId": "2",
+            "employeeId": "30",
+            "isManager": false
+        },
+        {
+            "departmentId": "2",
+            "employeeId": "21",
+            "isManager": false
+        },
+        {
+            "departmentId": "2",
+            "employeeId": "24",
+            "isManager": false
+        },
+        {
+            "departmentId": "2",
+            "employeeId": "16",
+            "isManager": false
+        },
+        {
+            "departmentId": "2",
+            "employeeId": "24",
+            "isManager": false
+        },
+        {
+            "departmentId": "2",
+            "employeeId": "31",
+            "isManager": false
+        },
+        {
+            "departmentId": "3",
+            "employeeId": "13",
+            "isManager": true
+        },
+        {
+            "departmentId": "3",
+            "employeeId": "4",
+            "isManager": false
+        },
+        {
+            "departmentId": "3",
+            "employeeId": "20",
+            "isManager": false
+        },
+        {
+            "departmentId": "3",
+            "employeeId": "9",
+            "isManager": false
+        },
+        {
+            "departmentId": "3",
+            "employeeId": "36",
+            "isManager": false
+        },
+        {
+            "departmentId": "3",
+            "employeeId": "10",
+            "isManager": false
+        },
+        {
+            "departmentId": "3",
+            "employeeId": "29",
+            "isManager": false
+        },
+        {
+            "departmentId": "3",
+            "employeeId": "32",
+            "isManager": false
+        },
+        {
+            "departmentId": "3",
+            "employeeId": "21",
+            "isManager": false
+        },
+        {
+            "departmentId": "3",
+            "employeeId": "27",
+            "isManager": false
+        },
+        {
+            "departmentId": "4",
+            "employeeId": "34",
+            "isManager": true
+        },
+        {
+            "departmentId": "4",
+            "employeeId": "21",
+            "isManager": false
+        },
+        {
+            "departmentId": "4",
+            "employeeId": "32",
+            "isManager": false
+        },
+        {
+            "departmentId": "4",
+            "employeeId": "42",
+            "isManager": false
+        },
+        {
+            "departmentId": "4",
+            "employeeId": "20",
+            "isManager": false
+        },
+        {
+            "departmentId": "4",
+            "employeeId": "17",
+            "isManager": false
+        },
+        {
+            "departmentId": "4",
+            "employeeId": "29",
+            "isManager": false
+        },
+        {
+            "departmentId": "4",
+            "employeeId": "22",
+            "isManager": false
+        },
+        {
+            "departmentId": "4",
+            "employeeId": "17",
+            "isManager": false
+        },
+        {
+            "departmentId": "4",
+            "employeeId": "28",
+            "isManager": false
+        },
+        {
+            "departmentId": "5",
+            "employeeId": "9",
+            "isManager": true
+        },
+        {
+            "departmentId": "5",
+            "employeeId": "12",
+            "isManager": false
+        },
+        {
+            "departmentId": "5",
+            "employeeId": "3",
+            "isManager": false
+        },
+        {
+            "departmentId": "5",
+            "employeeId": "42",
+            "isManager": false
+        },
+        {
+            "departmentId": "5",
+            "employeeId": "6",
+            "isManager": false
+        },
+        {
+            "departmentId": "5",
+            "employeeId": "2",
+            "isManager": false
+        },
+        {
+            "departmentId": "5",
+            "employeeId": "37",
+            "isManager": false
+        },
+        {
+            "departmentId": "5",
+            "employeeId": "22",
+            "isManager": false
+        },
+        {
+            "departmentId": "5",
+            "employeeId": "4",
+            "isManager": false
+        },
+        {
+            "departmentId": "5",
+            "employeeId": "2",
+            "isManager": false
+        },
+        {
+            "departmentId": "6",
+            "employeeId": "46",
+            "isManager": true
+        },
+        {
+            "departmentId": "6",
+            "employeeId": "16",
+            "isManager": false
+        },
+        {
+            "departmentId": "6",
+            "employeeId": "10",
+            "isManager": false
+        },
+        {
+            "departmentId": "6",
+            "employeeId": "33",
+            "isManager": false
+        },
+        {
+            "departmentId": "6",
+            "employeeId": "31",
+            "isManager": false
+        },
+        {
+            "departmentId": "6",
+            "employeeId": "12",
+            "isManager": false
+        },
+        {
+            "departmentId": "6",
+            "employeeId": "11",
+            "isManager": false
+        },
+        {
+            "departmentId": "6",
+            "employeeId": "13",
+            "isManager": false
+        },
+        {
+            "departmentId": "6",
+            "employeeId": "29",
+            "isManager": false
+        },
+        {
+            "departmentId": "6",
+            "employeeId": "27",
+            "isManager": false
+        },
+        {
+            "departmentId": "7",
+            "employeeId": "38",
+            "isManager": true
+        },
+        {
+            "departmentId": "7",
+            "employeeId": "22",
+            "isManager": false
+        },
+        {
+            "departmentId": "7",
+            "employeeId": "25",
+            "isManager": false
+        },
+        {
+            "departmentId": "7",
+            "employeeId": "1",
+            "isManager": false
+        },
+        {
+            "departmentId": "7",
+            "employeeId": "22",
+            "isManager": false
+        },
+        {
+            "departmentId": "7",
+            "employeeId": "15",
+            "isManager": false
+        },
+        {
+            "departmentId": "7",
+            "employeeId": "12",
+            "isManager": false
+        },
+        {
+            "departmentId": "7",
+            "employeeId": "12",
+            "isManager": false
+        },
+        {
+            "departmentId": "7",
+            "employeeId": "23",
+            "isManager": false
+        },
+        {
+            "departmentId": "7",
+            "employeeId": "28",
+            "isManager": false
+        },
+        {
+            "departmentId": "8",
+            "employeeId": "35",
+            "isManager": true
+        },
+        {
+            "departmentId": "8",
+            "employeeId": "16",
+            "isManager": false
+        },
+        {
+            "departmentId": "8",
+            "employeeId": "6",
+            "isManager": false
+        },
+        {
+            "departmentId": "8",
+            "employeeId": "43",
+            "isManager": false
+        },
+        {
+            "departmentId": "8",
+            "employeeId": "37",
+            "isManager": false
+        },
+        {
+            "departmentId": "8",
+            "employeeId": "9",
+            "isManager": false
+        },
+        {
+            "departmentId": "8",
+            "employeeId": "14",
+            "isManager": false
+        },
+        {
+            "departmentId": "8",
+            "employeeId": "30",
+            "isManager": false
+        },
+        {
+            "departmentId": "8",
+            "employeeId": "36",
+            "isManager": false
+        },
+        {
+            "departmentId": "8",
+            "employeeId": "10",
+            "isManager": false
+        },
+        {
+            "departmentId": "9",
+            "employeeId": "2",
+            "isManager": true
+        },
+        {
+            "departmentId": "9",
+            "employeeId": "24",
+            "isManager": false
+        },
+        {
+            "departmentId": "9",
+            "employeeId": "3",
+            "isManager": false
+        },
+        {
+            "departmentId": "9",
+            "employeeId": "18",
+            "isManager": false
+        },
+        {
+            "departmentId": "9",
+            "employeeId": "17",
+            "isManager": false
+        },
+        {
+            "departmentId": "9",
+            "employeeId": "13",
+            "isManager": false
+        },
+        {
+            "departmentId": "9",
+            "employeeId": "8",
+            "isManager": false
+        },
+        {
+            "departmentId": "9",
+            "employeeId": "34",
+            "isManager": false
+        },
+        {
+            "departmentId": "9",
+            "employeeId": "3",
+            "isManager": false
+        },
+        {
+            "departmentId": "9",
+            "employeeId": "30",
+            "isManager": false
+        },
+        {
+            "departmentId": "10",
+            "employeeId": "6",
+            "isManager": true
+        },
+        {
+            "departmentId": "10",
+            "employeeId": "10",
+            "isManager": false
+        },
+        {
+            "departmentId": "10",
+            "employeeId": "30",
+            "isManager": false
+        },
+        {
+            "departmentId": "10",
+            "employeeId": "25",
+            "isManager": false
+        },
+        {
+            "departmentId": "10",
+            "employeeId": "11",
+            "isManager": false
+        },
+        {
+            "departmentId": "10",
+            "employeeId": "32",
+            "isManager": false
+        },
+        {
+            "departmentId": "10",
+            "employeeId": "30",
+            "isManager": false
+        },
+        {
+            "departmentId": "10",
+            "employeeId": "23",
+            "isManager": false
+        },
+        {
+            "departmentId": "10",
+            "employeeId": "36",
+            "isManager": false
+        },
+        {
+            "departmentId": "10",
+            "employeeId": "13",
+            "isManager": false
+        },
+        {
+            "departmentId": "11",
+            "employeeId": "26",
+            "isManager": true
+        },
+        {
+            "departmentId": "11",
+            "employeeId": "33",
+            "isManager": false
+        },
+        {
+            "departmentId": "11",
+            "employeeId": "30",
+            "isManager": false
+        },
+        {
+            "departmentId": "11",
+            "employeeId": "34",
+            "isManager": false
+        },
+        {
+            "departmentId": "11",
+            "employeeId": "9",
+            "isManager": false
+        },
+        {
+            "departmentId": "11",
+            "employeeId": "24",
+            "isManager": false
+        },
+        {
+            "departmentId": "11",
+            "employeeId": "14",
+            "isManager": false
+        },
+        {
+            "departmentId": "11",
+            "employeeId": "36",
+            "isManager": false
+        },
+        {
+            "departmentId": "11",
+            "employeeId": "36",
+            "isManager": false
+        },
+        {
+            "departmentId": "11",
+            "employeeId": "39",
+            "isManager": false
+        }
+    ],
+    "positions": [
+        {
+            "id": "1",
+            "name": "Thành viên ban quản lý KTX",
+            "department_id": "1",
+            "is_manager": 1,
+            "role_id": "1",
+            "team_id": ""
+        },
+        {
+            "id": "2",
+            "name": "Giám thị",
+            "department_id": "1",
+            "is_manager": 0,
+            "role_id": "2",
+            "team_id": ""
+        },
+        {
+            "id": "3",
+            "name": "Kế toán",
+            "department_id": "1",
+            "is_manager": 0,
+            "role_id": "3",
+            "team_id": ""
+        },
+        {
+            "id": "4",
+            "name": "Trưởng đội 1",
+            "department_id": "2",
+            "is_manager": 1,
+            "role_id": "6",
+            "team_id": ""
+        },
+        {
+            "id": "5",
+            "name": "Thành viên",
+            "department_id": "3",
+            "is_manager": 0,
+            "role_id": "5",
+            "team_id": ""
+        },
+        {
+            "id": "6",
+            "name": "Hỗ trợ trưởng tầng",
+            "department_id": "4",
+            "is_manager": 0,
+            "role_id": "5",
+            "team_id": ""
+        },
+        {
+            "id": "7",
+            "name": "Trưởng tầng 1",
+            "department_id": "4",
+            "is_manager": 1,
+            "role_id": "6",
+            "team_id": ""
+        },
+        {
+            "id": "8",
+            "name": "Trưởng phòng sinh viên tầng 1",
+            "department_id": "4",
+            "is_manager": 0,
+            "role_id": "5",
+            "team_id": ""
+        },
+        {
+            "id": "9",
+            "name": "Hỗ trợ trưởng tầng",
+            "department_id": "5",
+            "is_manager": 0,
+            "role_id": "5",
+            "team_id": ""
+        },
+        {
+            "id": "10",
+            "name": "Trưởng tầng 2",
+            "department_id": "5",
+            "is_manager": 1,
+            "role_id": "6",
+            "team_id": ""
+        },
+        {
+            "id": "11",
+            "name": "Trưởng phòng sinh viên tầng 2",
+            "department_id": "5",
+            "is_manager": 0,
+            "role_id": "5",
+            "team_id": ""
+        },
+        {
+            "id": "12",
+            "name": "Hỗ trợ trưởng tầng",
+            "department_id": "6",
+            "is_manager": 0,
+            "role_id": "5",
+            "team_id": ""
+        },
+        {
+            "id": "13",
+            "name": "Trưởng tầng 3",
+            "department_id": "6",
+            "is_manager": 0,
+            "role_id": "6",
+            "team_id": ""
+        },
+        {
+            "id": "14",
+            "name": "Trưởng phòng sinh viên tầng 3",
+            "department_id": "6",
+            "is_manager": 0,
+            "role_id": "5",
+            "team_id": ""
+        },
+        {
+            "id": "15",
+            "name": "Hỗ trợ trưởng tầng",
+            "department_id": "7",
+            "is_manager": 0,
+            "role_id": "5",
+            "team_id": ""
+        },
+        {
+            "id": "16",
+            "name": "Trưởng tầng trệt",
+            "department_id": "7",
+            "is_manager": 1,
+            "role_id": "6",
+            "team_id": ""
+        },
+        {
+            "id": "17",
+            "name": "Trưởng phòng sinh viên tầng trệt",
+            "department_id": "7",
+            "is_manager": 0,
+            "role_id": "5",
+            "team_id": ""
+        },
+        {
+            "id": "18",
+            "name": "Thành viên",
+            "department_id": "8",
+            "is_manager": 0,
+            "role_id": "5",
+            "team_id": ""
+        },
+        {
+            "id": "19",
+            "name": "Trưởng đội 2",
+            "department_id": "8",
+            "is_manager": 1,
+            "role_id": "",
+            "team_id": ""
+        }
+    ],
+    "roles": [
+        {
+            "id": "1",
+            "name": "Điều hành các hoạt động của KTX"
+        },
+        {
+            "id": "2",
+            "name": "Duyệt các đề xuất nghỉ phép của sinh viên"
+        },
+        {
+            "id": "3",
+            "name": "Giải quyết các vấn đề tiền ăn và học phí"
+        },
+        {
+            "id": "4",
+            "name": "Quản lý cơ sở vật chất, an ninh KTX"
+        },
+        {
+            "id": "5",
+            "name": "Sinh viên"
+        },
+        {
+            "id": "6",
+            "name": "Nhận đề xuất và thực hiện sửa chữa hư hỏng cho các phòng"
+        },
+        {
+            "id": "7",
+            "name": "Quản lý, chấm điểm rèn luyện cho SV và điểm danh SV"
+        }
+    ],
+    "options": [
+        {
+            "id": "1",
+            "name": "Hợp đồng kinh tế"
+        },
+        {
+            "id": "2",
+            "name": "Hợp đồng"
+        },
+        {
+            "id": "3",
+            "name": "Cảnh báo/nhắc nhở"
+        },
+        {
+            "id": "4",
+            "name": "Thiết bị"
+        },
+        {
+            "id": "5",
+            "name": "Phụ tùng"
+        },
+        {
+            "id": "6",
+            "name": "Cảm biến"
+        },
+        {
+            "id": "6",
+            "name": "Cảm biến"
+        },
+        {
+            "id": "8",
+            "name": "Cảm biến"
+        },
+        {
+            "id": "9",
+            "name": "Danh mục"
+        },
+        {
+            "id": "10",
+            "name": "Danh mục kiểm tra"
+        },
+        {
+            "id": "11",
+            "name": "Công việc"
+        },
+        {
+            "id": "12",
+            "name": "Đề xuất"
+        },
+        {
+            "id": "13",
+            "name": "Loại đề xuất"
+        },
+        {
+            "id": "14",
+            "name": "Nhân viên"
+        },
+        {
+            "id": "15",
+            "name": "Phòng ban"
+        },
+        {
+            "id": "16",
+            "name": "Chức vụ"
+        },
+        {
+            "id": "17",
+            "name": "Kho"
+        },
+        {
+            "id": "18",
+            "name": "Vai trò"
+        },
+        {
+            "id": "19",
+            "name": "Báo cáo"
+        },
+        {
+            "id": "20",
+            "name": "Khách hàng"
+        },
+        {
+            "id": "21",
+            "name": "Người dùng"
+        },
+        {
+            "id": "22",
+            "name": "Chức năng công ty"
+        },
+        {
+            "id": "23",
+            "name": "Thẻ"
+        },
+        {
+            "id": "24",
+            "name": "Phân loại khách hàng"
+        },
+        {
+            "id": "25",
+            "name": "Sản phẩm"
+        },
+        {
+            "id": "26",
+            "name": "Sản phẩm"
+        }
+    ],
+    "permissions": [
+        {
+            "id": "1",
+            "name": "Xem"
+        },
+        {
+            "id": "2",
+            "name": "Tạo"
+        },
+        {
+            "id": "3",
+            "name": "Sửa"
+        },
+        {
+            "id": "4",
+            "name": "Xoá"
+        },
+        {
+            "id": "5",
+            "name": "Xem hết"
+        },
+        {
+            "id": "6",
+            "name": "Sửa hết"
+        },
+        {
+            "id": "7",
+            "name": "Xoá hết"
+        }
+    ],
+    "role_details": [
+        {
+            "id": "1",
+            "role_id": "5",
+            "option_id": "11",
+            "permission_id": "1"
+        },
+        {
+            "id": "2",
+            "role_id": "5",
+            "option_id": "11",
+            "permission_id": "2"
+        },
+        {
+            "id": "3",
+            "role_id": "5",
+            "option_id": "11",
+            "permission_id": "3"
+        },
+        {
+            "id": "4",
+            "role_id": "5",
+            "option_id": "11",
+            "permission_id": "4"
+        },
+        {
+            "id": "5",
+            "role_id": "5",
+            "option_id": "12",
+            "permission_id": "1"
+        },
+        {
+            "id": "6",
+            "role_id": "5",
+            "option_id": "12",
+            "permission_id": "2"
+        },
+        {
+            "id": "7",
+            "role_id": "5",
+            "option_id": "12",
+            "permission_id": "3"
+        },
+        {
+            "id": "8",
+            "role_id": "5",
+            "option_id": "12",
+            "permission_id": "4"
+        },
+        {
+            "id": "9",
+            "role_id": "5",
+            "option_id": "14",
+            "permission_id": "1"
+        },
+        {
+            "id": "10",
+            "role_id": "5",
+            "option_id": "15",
+            "permission_id": "1"
+        },
+        {
+            "id": "11",
+            "role_id": "4",
+            "option_id": "11",
+            "permission_id": "1"
+        },
+        {
+            "id": "12",
+            "role_id": "4",
+            "option_id": "11",
+            "permission_id": "2"
+        },
+        {
+            "id": "13",
+            "role_id": "4",
+            "option_id": "11",
+            "permission_id": "3"
+        },
+        {
+            "id": "14",
+            "role_id": "4",
+            "option_id": "11",
+            "permission_id": "4"
+        },
+        {
+            "id": "15",
+            "role_id": "4",
+            "option_id": "11",
+            "permission_id": "5"
+        },
+        {
+            "id": "16",
+            "role_id": "4",
+            "option_id": "11",
+            "permission_id": "6"
+        },
+        {
+            "id": "17",
+            "role_id": "4",
+            "option_id": "12",
+            "permission_id": "1"
+        },
+        {
+            "id": "18",
+            "role_id": "4",
+            "option_id": "12",
+            "permission_id": "2"
+        },
+        {
+            "id": "19",
+            "role_id": "4",
+            "option_id": "12",
+            "permission_id": "3"
+        },
+        {
+            "id": "20",
+            "role_id": "4",
+            "option_id": "12",
+            "permission_id": "4"
+        },
+        {
+            "id": "21",
+            "role_id": "4",
+            "option_id": "12",
+            "permission_id": "5"
+        },
+        {
+            "id": "22",
+            "role_id": "4",
+            "option_id": "12",
+            "permission_id": "6"
+        },
+        {
+            "id": "23",
+            "role_id": "4",
+            "option_id": "14",
+            "permission_id": "1"
+        },
+        {
+            "id": "24",
+            "role_id": "4",
+            "option_id": "15",
+            "permission_id": "1"
+        },
+        {
+            "id": "25",
+            "role_id": "4",
+            "option_id": "16",
+            "permission_id": "1"
+        },
+        {
+            "id": "26",
+            "role_id": "6",
+            "option_id": "11",
+            "permission_id": "1"
+        },
+        {
+            "id": "27",
+            "role_id": "6",
+            "option_id": "11",
+            "permission_id": "2"
+        },
+        {
+            "id": "28",
+            "role_id": "6",
+            "option_id": "11",
+            "permission_id": "3"
+        },
+        {
+            "id": "29",
+            "role_id": "6",
+            "option_id": "11",
+            "permission_id": "4"
+        },
+        {
+            "id": "30",
+            "role_id": "6",
+            "option_id": "12",
+            "permission_id": "1"
+        },
+        {
+            "id": "31",
+            "role_id": "6",
+            "option_id": "12",
+            "permission_id": "2"
+        },
+        {
+            "id": 32,
+            "role_id": 6,
+            "option_id": 12,
+            "permission_id": 3
+        },
+        {
+            "id": "33",
+            "role_id": "6",
+            "option_id": "12",
+            "permission_id": "4"
+        },
+        {
+            "id": "34",
+            "role_id": "6",
+            "option_id": "14",
+            "permission_id": "1"
+        },
+        {
+            "id": "35",
+            "role_id": "6",
+            "option_id": "15",
+            "permission_id": "1"
+        },
+        {
+            "id": "36",
+            "role_id": "6",
+            "option_id": "16",
+            "permission_id": "1"
+        }
+    ],
+    "statuses": [
+        {
+            "id": "1",
+            "name": "Hoàn tất"
+        },
+        {
+            "id": "2",
+            "name": "Bị từ chối"
+        },
+        {
+            "id": "3",
+            "name": "Đã huỷ"
+        },
+        {
+            "id": "4",
+            "name": "Mới"
+        },
+        {
+            "id": "5",
+            "name": "Đang làm"
+        },
+        {
+            "id": "6",
+            "name": "Chờ xác nhận"
+        },
+        {
+            "id": "7",
+            "name": "Hoàn thành"
+        },
+        {
+            "id": "8",
+            "name": "Quá hạn"
+        },
+        {
+            "id": "9"
+        }
+    ],
+    "data_types": [
+        {
+            "id": "1",
+            "name": "Textarea"
+        },
+        {
+            "id": "2",
+            "name": "Dropdown"
+        },
+        {
+            "id": "3",
+            "name": "Radio"
+        },
+        {
+            "id": "4",
+            "name": "Checkbox"
+        },
+        {
+            "id": "5",
+            "name": "Number"
+        },
+        {
+            "id": "6",
+            "name": "Calculator"
+        },
+        {
+            "id": "7",
+            "name": "Relation"
+        },
+        {
+            "id": "8",
+            "name": "Attachment"
+        },
+        {
+            "id": "9",
+            "name": "Datetime"
+        },
+        {
+            "id": "10",
+            "name": "Repeater"
+        },
+        {
+            "id": "11",
+            "name": "Label"
+        },
+        {
+            "id": "12"
+        }
+    ],
+    "tasks": [
+        {
+            "id": "1",
+            "status": "5",
+            "creator_id": "25"
+        },
+        {
+            "id": "2",
+            "status": "8",
+            "creator_id": "23"
+        },
+        {
+            "id": "3",
+            "status": "2",
+            "creator_id": "14"
+        },
+        {
+            "id": "4",
+            "status": "5",
+            "creator_id": "23"
+        },
+        {
+            "id": "5",
+            "status": "8",
+            "creator_id": "28"
+        },
+        {
+            "id": "6",
+            "status": "4",
+            "creator_id": "23"
+        },
+        {
+            "id": "7",
+            "status": "6",
+            "creator_id": "25"
+        },
+        {
+            "id": "8",
+            "status": "2",
+            "creator_id": "14"
+        },
+        {
+            "id": "9",
+            "status": "9",
+            "creator_id": "24"
+        },
+        {
+            "id": "10",
+            "status": "9",
+            "creator_id": "44"
+        },
+        {
+            "id": "11",
+            "status": "3",
+            "creator_id": "46"
+        },
+        {
+            "id": "12",
+            "status": "1",
+            "creator_id": "10"
+        },
+        {
+            "id": "13",
+            "status": "1",
+            "creator_id": "28"
+        },
+        {
+            "id": "14",
+            "status": "7",
+            "creator_id": "36"
+        },
+        {
+            "id": "15",
+            "status": "6",
+            "creator_id": "20"
+        },
+        {
+            "id": "16",
+            "status": "2",
+            "creator_id": "8"
+        },
+        {
+            "id": "17",
+            "status": "6",
+            "creator_id": "19"
+        },
+        {
+            "id": "18",
+            "status": "1",
+            "creator_id": "3"
+        },
+        {
+            "id": "19",
+            "status": "6",
+            "creator_id": "10"
+        },
+        {
+            "id": "20",
+            "status": "7",
+            "creator_id": "11"
+        },
+        {
+            "id": "21",
+            "status": "7",
+            "creator_id": "14"
+        },
+        {
+            "id": "22",
+            "status": "1",
+            "creator_id": "42"
+        },
+        {
+            "id": "23",
+            "status": "1",
+            "creator_id": "31"
+        },
+        {
+            "id": "24",
+            "status": "7",
+            "creator_id": "9"
+        },
+        {
+            "id": "25",
+            "status": "3",
+            "creator_id": "4"
+        },
+        {
+            "id": "26",
+            "status": "1",
+            "creator_id": "11"
+        },
+        {
+            "id": "27",
+            "status": "4",
+            "creator_id": "27"
+        },
+        {
+            "id": "28",
+            "status": "4",
+            "creator_id": "5"
+        },
+        {
+            "id": "29",
+            "status": "1",
+            "creator_id": "37"
+        },
+        {
+            "id": "30",
+            "status": "9",
+            "creator_id": "18"
+        }
+    ],
+    "task_details": [
+        {
+            "id": "1",
+            "task_id": "1",
+            "title": "leo làm xe",
+            "description": "Đánh nước tàu bảy.\nCửa may lỗi biển em tủ thương làm là ngọt.\nTrăng đang quần thuyền mua ờ mướn ờ nước.\nTím khoảng leo chìm đạp ác.\nVẽ mượn quê.",
+            "receiver_id": "35"
+        },
+        {
+            "id": "2",
+            "task_id": "1",
+            "title": "tím vẽ xe",
+            "description": "Giày xuồng thuê em mua.\nĐá hàng dép vá chỉ á đồng lỗi.\nMười một thôi bảy bảy chỉ nước hóa cửa vá.\nĐâu leo xuồng tàu gió đạp nón hàng.\nHàng trời hết ờ ghế hết.",
+            "receiver_id": "16"
+        },
+        {
+            "id": "3",
+            "task_id": "1",
+            "title": "ngọt thương yêu",
+            "description": "Độc hết mượn đạp quần mua việc bốn lầu.\nChỉ nghỉ giày hóa thuê nước ghét đá.\nĐập chìm đạp tủ bơi.\nTrăng bốn xanh leo.",
+            "receiver_id": "6"
+        },
+        {
+            "id": "4",
+            "task_id": "2",
+            "title": "chỉ tím vá",
+            "description": "May nghỉ chìm đập bốn.\nThế cái việc.",
+            "receiver_id": "43"
+        },
+        {
+            "id": "5",
+            "task_id": "2",
+            "title": "năm là giày",
+            "description": "Cái mua tám bè đâu quần hàng phá.\nNhà biết bảy á lầu.\nTui tím nghỉ viết bảy mười thuyền.\nAnh nha giết độc xanh.",
+            "receiver_id": "2"
+        },
+        {
+            "id": "6",
+            "task_id": "2",
+            "title": "đồng xuồng ác",
+            "description": "Thế giày mười giày núi một.",
+            "receiver_id": "14"
+        },
+        {
+            "id": "7",
+            "task_id": "3",
+            "title": "đang máy hóa",
+            "description": "Bảy đạp mười ác áo việc hàng việc.\nThuyền tím năm lầu.\nKhâu máy đánh yêu thế.",
+            "receiver_id": "30"
+        },
+        {
+            "id": "8",
+            "task_id": "3",
+            "title": "máy tám sáu",
+            "description": "Tôi thì tôi bè tám em yêu á máy bàn.\nLàm gió quê nghỉ.\nĐã đỏ độc tím.\nNước chỉ nón tím đỏ.\nLà bạn khâu kim.",
+            "receiver_id": "30"
+        },
+        {
+            "id": "9",
+            "task_id": "3",
+            "title": "nước bảy xanh",
+            "description": "Được mây chín.\nXe dép thuê tàu áo dép ừ khoảng.\nKhông bảy nước giết á cái năm nha vá vàng.",
+            "receiver_id": "15"
+        },
+        {
+            "id": "10",
+            "task_id": "4",
+            "title": "ruộng leo máy",
+            "description": "Quê ba đánh anh bàn khâu hóa việc hương.\nBàn nước hết mướn khâu đá ác yêu.\nNha xuồng cái giày việc tôi bảy vàng ghét khoan.\nĐồng tôi thương một gì.",
+            "receiver_id": "20"
+        },
+        {
+            "id": "11",
+            "task_id": "4",
+            "title": "tím đã nghỉ",
+            "description": "Bảy núi khoan độc một.\nThích cái đập hết dép cửa giày ờ chết gì.\nTrời đã việc thì thích dép máy ác máy chín.",
+            "receiver_id": "45"
+        },
+        {
+            "id": "12",
+            "task_id": "4",
+            "title": "mua biết áo",
+            "description": "Mượn chỉ mây nhà ờ tôi tím ừ bàn mua.",
+            "receiver_id": "11"
+        },
+        {
+            "id": "13",
+            "task_id": "5",
+            "title": "chỉ kim lầu",
+            "description": "Cái xanh thương ba.\nTui đâu thuê thôi thôi xuồng biết.\nTôi phá kim.\nLỗi đâu núi đang.",
+            "receiver_id": "38"
+        },
+        {
+            "id": "14",
+            "task_id": "5",
+            "title": "ừ hết viết",
+            "description": "Chìm viết đá.\nBạn biết cái đã leo nghỉ tàu.",
+            "receiver_id": "10"
+        },
+        {
+            "id": "15",
+            "task_id": "5",
+            "title": "bốn bạn thuê",
+            "description": "Sáu cái hai khâu đang quần được ruộng ngọt khâu.\nKhoan thôi chết giết thích lầu quê.",
+            "receiver_id": "20"
+        },
+        {
+            "id": "16",
+            "task_id": "6",
+            "title": "tám nước thuyền",
+            "description": "Mười nón thì hóa bơi anh vẽ trời.\nLỗi thương hóa đã chỉ.",
+            "receiver_id": "32"
+        },
+        {
+            "id": "17",
+            "task_id": "6",
+            "title": "leo kim không",
+            "description": "Viết quần leo bàn biết leo xanh cửa trăng.\nPhá quê yêu tô thì leo quê trời hàng.",
+            "receiver_id": "38"
+        },
+        {
+            "id": "18",
+            "task_id": "6",
+            "title": "bè mua hết",
+            "description": "Ừ ba núi may tôi đồng độc nón.",
+            "receiver_id": "37"
+        },
+        {
+            "id": "19",
+            "task_id": "7",
+            "title": "bảy thương đỏ",
+            "description": "Tám hàng đập đang chín hương đồng.\nHương bạn tô ba ờ anh á.\nAnh ghét hương trăng bạn bè nha.\nViết cái là đánh khoan.",
+            "receiver_id": "46"
+        },
+        {
+            "id": "20",
+            "task_id": "7",
+            "title": "thích nha á",
+            "description": "Hai hết nghỉ thương ờ đã.\nPhá nha hết tôi ruộng núi.\nRuộng chết áo.\nMây chỉ sáu là bạn trời giày khoan.\nBạn yêu tui nón.",
+            "receiver_id": "28"
+        },
+        {
+            "id": "21",
+            "task_id": "7",
+            "title": "tủ vàng chỉ",
+            "description": "Ruộng mướn xuồng vá chỉ.\nRuộng ừ áo xanh ờ khoảng quê.\nTrăng khoan đập em máy vá thuyền.\nGhét con hàng hóa mười viết.\nXuồng hương tủ.",
+            "receiver_id": "35"
+        },
+        {
+            "id": "22",
+            "task_id": "8",
+            "title": "em nghỉ chết",
+            "description": "Được quần trời tím.\nĐỏ nhà việc mười xanh là thuê đâu.\nNha chỉ cửa nha dép máy vá.",
+            "receiver_id": "47"
+        },
+        {
+            "id": "23",
+            "task_id": "8",
+            "title": "bạn vẽ khoảng",
+            "description": "Bạn bảy bốn là bảy đã xuồng mướn.\nViết ngọt hương hóa tui đỏ đá nghỉ.",
+            "receiver_id": "1"
+        },
+        {
+            "id": "24",
+            "task_id": "8",
+            "title": "ừ tím lầu",
+            "description": "Nhà thương gì mười mây đập tui.\nĐồng vàng tô ba cửa sáu tô nha hàng.",
+            "receiver_id": "30"
+        },
+        {
+            "id": "25",
+            "task_id": "9",
+            "title": "khoảng bè giày",
+            "description": "Đâu không tím xuồng khoan.\nNước bè cái leo chỉ sáu thôi nghỉ thì.",
+            "receiver_id": "15"
+        },
+        {
+            "id": "26",
+            "task_id": "9",
+            "title": "tô trăng con",
+            "description": "May quê tô thì cửa thì khoan.",
+            "receiver_id": "43"
+        },
+        {
+            "id": "27",
+            "task_id": "9",
+            "title": "không bơi thích",
+            "description": "Quần cái quần leo ruộng gì.\nNha bàn hóa ừ hai yêu.",
+            "receiver_id": "37"
+        },
+        {
+            "id": "28",
+            "task_id": "10",
+            "title": "giết giày việc",
+            "description": "Là á khoan viết.",
+            "receiver_id": "4"
+        },
+        {
+            "id": "29",
+            "task_id": "10",
+            "title": "tám việc nha",
+            "description": "Trời sáu quê gì tím áo biết kim á tàu.\nChìm quần khoảng.\nGhế thế thế gì may yêu.",
+            "receiver_id": "9"
+        },
+        {
+            "id": "30",
+            "task_id": "10",
+            "title": "nước tôi tám",
+            "description": "Chết bạn giết bơi giày.\nCửa chết may bơi con con lầu ờ đồng leo.\nCửa đỏ gió lầu núi.\nThuyền hàng đâu thế thì mua thuê kim đập.\nĐạp bảy phá chết chín em đánh mây á.",
+            "receiver_id": "32"
+        },
+        {
+            "id": "31",
+            "task_id": "11",
+            "title": "việc khoan ngọt",
+            "description": "Cái mướn xanh biển đá ruộng.\nChết á dép được đạp gì leo ruộng bàn dép.\nKhoan may dép mười quê tám.",
+            "receiver_id": "40"
+        },
+        {
+            "id": "32",
+            "task_id": "11",
+            "title": "không bạn việc",
+            "description": "Núi nha trăng hết ừ chỉ bạn thuê.\nNgọt đang biết ngọt thuê thích lỗi.\nĐánh ngọt biết tui giết may.\nVàng máy khoảng dép núi lỗi kim.",
+            "receiver_id": "15"
+        },
+        {
+            "id": "33",
+            "task_id": "11",
+            "title": "chìm mượn ừ",
+            "description": "Làm tím độc làm xanh.\nLà xanh khoảng hóa thế xuồng.\nHương tàu mướn.",
+            "receiver_id": "17"
+        },
+        {
+            "id": "34",
+            "task_id": "12",
+            "title": "tô mượn xe",
+            "description": "Một ghế bơi thuyền bốn bốn mười.\nĐập quần viết viết gì xanh tím đạp hương.\nĐánh hết tô mười đồng giày một mây ờ.",
+            "receiver_id": "36"
+        },
+        {
+            "id": "35",
+            "task_id": "12",
+            "title": "trăng cửa thuê",
+            "description": "Đang sáu lầu sáu.",
+            "receiver_id": "47"
+        },
+        {
+            "id": "36",
+            "task_id": "12",
+            "title": "mua tôi đỏ",
+            "description": "Anh gì bạn áo thế.\nThì hương cửa năm chìm độc khâu.\nĐập tui biết.",
+            "receiver_id": "26"
+        },
+        {
+            "id": "37",
+            "task_id": "13",
+            "title": "thương nha khâu",
+            "description": "Tôi mây em.\nCửa á thuê may mua giày leo tui.\nMột bơi ác chỉ thế hương thôi đang đang gì.\nHương chín trăng đạp đã.\nCửa khoan hai mướn may quần á.",
+            "receiver_id": "30"
+        },
+        {
+            "id": "38",
+            "task_id": "13",
+            "title": "ác lỗi một",
+            "description": "Máy ừ thuê chìm.",
+            "receiver_id": "41"
+        },
+        {
+            "id": "39",
+            "task_id": "13",
+            "title": "gì quần may",
+            "description": "Là kim thuyền tủ độc đập.\nHai cái thuê bàn xe ruộng quần xanh.\nKhâu sáu máy.\nCửa ba ác làm biết đỏ.",
+            "receiver_id": "12"
+        },
+        {
+            "id": "40",
+            "task_id": "14",
+            "title": "bè mây dép",
+            "description": "Hóa khoảng gió cái ác áo đập bốn.\nĐá ác tám tàu con em ngọt lầu ngọt giày.\nBàn vẽ yêu bốn ừ.\nTô vẽ ba khâu mượn xe ruộng áo.\nLeo dép nghỉ mây được.",
+            "receiver_id": "41"
+        },
+        {
+            "id": "41",
+            "task_id": "14",
+            "title": "lầu khoan tôi",
+            "description": "Kim đã chín là ờ năm.\nĐược tô bàn thôi xanh trời bảy giày máy thế.\nĐâu ác tui vàng biết nước anh biển.\nThôi ác mượn á mướn tủ thích chỉ đỏ chết.\nTàu vẽ chìm bàn đâu yêu.",
+            "receiver_id": "36"
+        },
+        {
+            "id": "42",
+            "task_id": "14",
+            "title": "đỏ đã ruộng",
+            "description": "Năm gió tím hàng.\nXanh một mười hàng dép ngọt.\nĐộc hai núi gió đập tím bơi một.",
+            "receiver_id": "26"
+        },
+        {
+            "id": "43",
+            "task_id": "15",
+            "title": "ba áo dép",
+            "description": "Đạp chỉ thích vẽ kim chín ngọt giày.",
+            "receiver_id": "30"
+        },
+        {
+            "id": "44",
+            "task_id": "15",
+            "title": "hóa phá vá",
+            "description": "Máy độc á hương giết vá ba khoảng.",
+            "receiver_id": "17"
+        },
+        {
+            "id": "45",
+            "task_id": "15",
+            "title": "hết ruộng hương",
+            "description": "Tôi bơi tám đạp.\nĐang vàng leo.\nMượn ừ anh thôi nha.",
+            "receiver_id": "19"
+        },
+        {
+            "id": "46",
+            "task_id": "16",
+            "title": "trăng viết nha",
+            "description": "Tô dép tui nước núi một hàng tủ.\nSáu được may chìm đã sáu.\nLà giày hương tủ là ruộng ghét quê.\nĐâu yêu lầu đang ghế tàu thì.\nXanh ba ác.",
+            "receiver_id": "37"
+        },
+        {
+            "id": "47",
+            "task_id": "16",
+            "title": "ờ khoảng tím",
+            "description": "Khoan đồng đang mua ruộng con bốn tủ giết máy.\nBiết chết nha bốn.\nThế bốn đập.\nHương bạn năm tui.",
+            "receiver_id": "32"
+        },
+        {
+            "id": "48",
+            "task_id": "16",
+            "title": "hàng độc trăng",
+            "description": "Cửa thuê giày cái leo mười giết.\nNón leo mướn đạp tím vẽ.",
+            "receiver_id": "11"
+        },
+        {
+            "id": "49",
+            "task_id": "17",
+            "title": "quê bàn mướn",
+            "description": "Đỏ thuê giết xe đang bốn hóa hết không.\nCon yêu tô mượn viết nón kim.\nỪ tím chìm đã hai khoan là.\nVá chìm bảy xe ác đánh không leo em cái.",
+            "receiver_id": "4"
+        },
+        {
+            "id": "50",
+            "task_id": "17",
+            "title": "xuồng tôi nón",
+            "description": "Là kim leo xuồng.\nNón ghét thuyền hương lỗi khoảng mây biết là.\nHai đỏ gió đã.\nTô trời xanh khâu trời.",
+            "receiver_id": "17"
+        },
+        {
+            "id": "51",
+            "task_id": "17",
+            "title": "tàu hóa á",
+            "description": "Vàng mười chết em được cái tô.\nMột thuyền tui ừ.\nKim thuyền đỏ được tím biết đã không mượn.",
+            "receiver_id": "27"
+        },
+        {
+            "id": "52",
+            "task_id": "18",
+            "title": "máy đạp anh",
+            "description": "Leo năm ghế đá.\nThôi mây núi mượn bàn biết bảy bạn.\nThôi năm sáu tôi vẽ gì phá vẽ hai.",
+            "receiver_id": "4"
+        },
+        {
+            "id": "53",
+            "task_id": "18",
+            "title": "kim con đánh",
+            "description": "Việc nha một.\nTàu đồng cửa mười chìm nghỉ hết con.\nỪ vá thôi cái đập thuyền mướn phá tui.\nĐâu tủ khâu tám tàu đỏ.\nNha sáu biển hàng.",
+            "receiver_id": "4"
+        },
+        {
+            "id": "54",
+            "task_id": "18",
+            "title": "biết tôi hết",
+            "description": "Chỉ ừ tôi.\nKhoan đồng giày gì hương ghét.\nĐồng bảy xe tô nón em.\nĐang mượn con khâu xe mười may ghét núi bơi.\nỜ đỏ bảy máy biết khâu vẽ đá ngọt ờ.",
+            "receiver_id": "38"
+        },
+        {
+            "id": "55",
+            "task_id": "19",
+            "title": "xe vá khoảng",
+            "description": "Em thôi thôi cửa khâu mười ghế.",
+            "receiver_id": "45"
+        },
+        {
+            "id": "56",
+            "task_id": "19",
+            "title": "xuồng áo mười",
+            "description": "Yêu nhà tôi đá bảy yêu viết không.",
+            "receiver_id": "11"
+        },
+        {
+            "id": "57",
+            "task_id": "19",
+            "title": "biết biển cửa",
+            "description": "Là tô đập năm đâu hết xe viết khâu biết.",
+            "receiver_id": "26"
+        },
+        {
+            "id": "58",
+            "task_id": "20",
+            "title": "ghét tô ừ",
+            "description": "Nhà bốn ngọt giết tím dép bè.",
+            "receiver_id": "38"
+        },
+        {
+            "id": "59",
+            "task_id": "20",
+            "title": "may núi mây",
+            "description": "Nhà ờ xanh ác ờ năm bơi hết.\nXe ruộng nước được thuê nón giết khâu.\nHết ác áo thích bạn tui chín việc vá leo.",
+            "receiver_id": "35"
+        },
+        {
+            "id": "60",
+            "task_id": "20",
+            "title": "trời tủ biết",
+            "description": "Ruộng kim bạn mười giết cửa làm không hương máy.",
+            "receiver_id": "42"
+        },
+        {
+            "id": "61",
+            "task_id": "21",
+            "title": "đồng thương á",
+            "description": "Đạp đánh thế chìm lỗi.\nBốn lỗi tủ đạp phá may hương vàng.\nNhà chín mây được mướn chết núi tàu.\nCửa á thương mượn mượn may ừ năm.",
+            "receiver_id": "41"
+        },
+        {
+            "id": "62",
+            "task_id": "21",
+            "title": "biển thế máy",
+            "description": "Giết hương ghế đạp đỏ.",
+            "receiver_id": "40"
+        },
+        {
+            "id": "63",
+            "task_id": "21",
+            "title": "hóa anh vá",
+            "description": "Chín ghế thôi hóa.\nBốn bảy bảy may chỉ xuồng bàn tủ bè.\nHương quần thế chết lỗi tám gì.",
+            "receiver_id": "32"
+        },
+        {
+            "id": "64",
+            "task_id": "22",
+            "title": "đỏ đá con",
+            "description": "Nón tím phá bạn viết đã ừ ghế viết phá.\nXuồng hàng xe.\nChỉ được á bơi tôi nghỉ mây.\nBàn bạn ừ ruộng giết đạp đang hương mướn chìm.",
+            "receiver_id": "41"
+        },
+        {
+            "id": "65",
+            "task_id": "22",
+            "title": "mướn xuồng đánh",
+            "description": "May ngọt hàng gió tím leo á nhà.\nGì lầu đập.\nBốn độc khoảng.\nThôi bơi đập khoảng quê đạp cái.",
+            "receiver_id": "46"
+        },
+        {
+            "id": "66",
+            "task_id": "22",
+            "title": "tôi thì tô",
+            "description": "Con chỉ lầu đồng hương lỗi việc thương giết.\nEm mây xanh thích giết bè bàn thuê.",
+            "receiver_id": "5"
+        },
+        {
+            "id": "67",
+            "task_id": "23",
+            "title": "thế thuê trăng",
+            "description": "Vàng tám xanh sáu vàng ghế leo tím.\nKhoảng làm khoảng đá bảy ừ.\nNhà quần nghỉ anh dép chết là ruộng.",
+            "receiver_id": "22"
+        },
+        {
+            "id": "68",
+            "task_id": "23",
+            "title": "tám nha bàn",
+            "description": "Thương tui tôi đạp giày tàu ờ.\nXe hóa thế ác ừ máy.\nBạn em cửa mười ruộng hết đạp mua.\nVá hóa chỉ hương biết đạp tủ.\nNgọt tủ tám nón ngọt leo áo đâu mua.",
+            "receiver_id": "43"
+        },
+        {
+            "id": "69",
+            "task_id": "23",
+            "title": "ngọt sáu khoảng",
+            "description": "Xe máy mây làm cái lầu đỏ.\nĐá đã đỏ trăng trăng cái nghỉ khoảng.",
+            "receiver_id": "10"
+        },
+        {
+            "id": "70",
+            "task_id": "24",
+            "title": "hàng quần mướn",
+            "description": "Nha bốn đã lầu thích xe nhà khoảng làm nón.\nBạn ờ làm tủ.\nYêu chết vá một thuê bạn anh mướn máy.\nGió đá ghét tui.\nTô đá xuồng.",
+            "receiver_id": "40"
+        },
+        {
+            "id": "71",
+            "task_id": "24",
+            "title": "thích vàng viết",
+            "description": "Khoảng ghét mượn ừ mười thích năm thích hóa.\nThôi mướn hết giày chỉ ghế thế.\nVẽ tàu ghế.\nThế mua giày khoan.\nEm bơi ruộng bàn đã năm hóa.",
+            "receiver_id": "8"
+        },
+        {
+            "id": "72",
+            "task_id": "24",
+            "title": "mướn ba đập",
+            "description": "Vá một xanh núi.\nÁ em mượn tàu một ghét.\nXanh nón biết chỉ biển.\nTám đâu mua là tám hóa cửa.\nRuộng may chết tui tôi hương tám may thôi xuồng.",
+            "receiver_id": "13"
+        },
+        {
+            "id": "73",
+            "task_id": "25",
+            "title": "được hết đâu",
+            "description": "Thích mua đâu nha chín thương.\nNăm nón hàng tui biết bạn.",
+            "receiver_id": "42"
+        },
+        {
+            "id": "74",
+            "task_id": "25",
+            "title": "mây đánh nước",
+            "description": "Đập bè ghế.\nVàng thì nha yêu giày bàn chỉ anh đá.\nMay vá bạn cái một đá bạn tủ mướn.\nNghỉ ghế giày bơi.",
+            "receiver_id": "38"
+        },
+        {
+            "id": "75",
+            "task_id": "25",
+            "title": "tui hàng á",
+            "description": "Hàng đỏ xe tàu.\nThương cửa thuê mười gió thế yêu bè ngọt máy.\nChìm giày cửa giày là quê á.\nMây bốn con trời ừ.\nLầu năm khoan leo được ghét hóa.",
+            "receiver_id": "37"
+        },
+        {
+            "id": "76",
+            "task_id": "26",
+            "title": "khoan ruộng năm",
+            "description": "Thuyền ừ thôi xe chỉ anh núi.\nTô trời ừ hai bốn.\nGiày quê gió khoan là đá anh em thì chỉ.",
+            "receiver_id": "3"
+        },
+        {
+            "id": "77",
+            "task_id": "26",
+            "title": "bảy mây chín",
+            "description": "Trăng con nha ruộng biển dép ừ áo.\nGì lầu á nha á tám chết bốn bốn không.\nMướn ngọt nha lầu tôi ghế mướn ờ việc.\nHương hết á dép nghỉ không dép sáu đã tô.",
+            "receiver_id": "24"
+        },
+        {
+            "id": "78",
+            "task_id": "26",
+            "title": "nha bơi máy",
+            "description": "Không tám chìm phá là đá nha.\nNước thế đang cửa tím giày.\nÁo đỏ một.",
+            "receiver_id": "28"
+        },
+        {
+            "id": "79",
+            "task_id": "27",
+            "title": "biển thì tàu",
+            "description": "Con hết trời khoan hàng thế tím bốn hai.\nTàu bè hai năm gì mướn.\nThuyền sáu quê nhà xe chìm nghỉ.\nNước việc bảy may cái biết.",
+            "receiver_id": "33"
+        },
+        {
+            "id": "80",
+            "task_id": "27",
+            "title": "độc không ngọt",
+            "description": "Vá hết làm bạn đập quê đồng đánh.\nThuyền bè đỏ vẽ đang.\nMay ghế năm yêu trăng đánh.",
+            "receiver_id": "37"
+        },
+        {
+            "id": "81",
+            "task_id": "27",
+            "title": "giày ghét gì",
+            "description": "Đồng được nha cái là hết ờ ghét giết bạn.\nThuyền ngọt đồng được mây chìm đỏ chỉ.\nVẽ á anh tủ tàu ác mượn chìm năm.\nVẽ tô hết ruộng bốn đỏ mười biển nước viết.",
+            "receiver_id": "36"
+        },
+        {
+            "id": "82",
+            "task_id": "28",
+            "title": "một áo kim",
+            "description": "Việc trăng xanh thích một tàu ghét biết đá nghỉ.",
+            "receiver_id": "11"
+        },
+        {
+            "id": "83",
+            "task_id": "28",
+            "title": "chỉ đã khoan",
+            "description": "Đánh thuyền mướn tám làm thuyền thuê vẽ thích.",
+            "receiver_id": "4"
+        },
+        {
+            "id": "84",
+            "task_id": "28",
+            "title": "tám ruộng quần",
+            "description": "Ngọt kim chìm may mượn đang thì.",
+            "receiver_id": "37"
+        },
+        {
+            "id": "85",
+            "task_id": "29",
+            "title": "tám độc trời",
+            "description": "Việc chìm lỗi tôi đồng.\nGiết thuê hai việc.\nKhâu hết mướn tàu.\nĐá trăng phá hàng ba chín áo yêu.",
+            "receiver_id": "8"
+        },
+        {
+            "id": "86",
+            "task_id": "29",
+            "title": "giết biết tôi",
+            "description": "Dép hai ừ sáu đỏ áo ghế hết.",
+            "receiver_id": "46"
+        },
+        {
+            "id": "87",
+            "task_id": "29",
+            "title": "tủ khoảng ác",
+            "description": "Tô thế đang ừ vàng mười năm.\nVá yêu mây quần không bạn tím tô quê cái.\nNgọt đá thôi phá ghét đỏ bè chìm.",
+            "receiver_id": "39"
+        },
+        {
+            "id": "88",
+            "task_id": "30",
+            "title": "giết mua được",
+            "description": "Việc núi mướn hương đạp quê yêu tàu.\nNghỉ thuyền nghỉ ba nghỉ thương.",
+            "receiver_id": "8"
+        },
+        {
+            "id": "89",
+            "task_id": "30",
+            "title": "chín giết việc",
+            "description": "Kim leo thương tô thương biển núi trời chìm.\nCon đâu gì.\nGió gió cái.\nĐược á đạp thôi.",
+            "receiver_id": "23"
+        },
+        {
+            "id": "90",
+            "task_id": "30",
+            "title": "chìm bơi chết",
+            "description": "Trăng làm khâu quần.\nHàng đạp biển mười bè.\nỜ áo ờ chìm thế dép nha tui.",
+            "receiver_id": "36"
+        }
+    ],
+    "proposal_types": [
+        {
+            "id": "1",
+            "name": "Đăng ký sửa chữa",
+            "active_flag": 1
+        },
+        {
+            "id": "2",
+            "name": "Đề xuất mua hàng",
+            "active_flag": 1
+        }
+    ],
+    "proposal_type_details": [
+        {
+            "id": "1",
+            "proposal_types_id": "1",
+            "index": 1,
+            "field_name": "Mục đích/Lý do",
+            "data_type_id": "1"
+        },
+        {
+            "id": "2",
+            "proposal_types_id": "1",
+            "index": 2,
+            "field_name": "Tình trạng hư hỏng",
+            "data_type_id": "2"
+        },
+        {
+            "id": "3",
+            "proposal_types_id": "1",
+            "index": 3,
+            "field_name": "Số phòng",
+            "data_type_id": "1"
+        },
+        {
+            "id": "4",
+            "proposal_types_id": "1",
+            "index": 4,
+            "field_name": "Ghi chú",
+            "data_type_id": "2"
+        },
+        {
+            "id": "5",
+            "proposal_types_id": "2",
+            "index": 1,
+            "field_name": "Mục đích/Lý do",
+            "data_type_id": "1"
+        },
+        {
+            "id": "6",
+            "proposal_types_id": "2",
+            "index": 2,
+            "field_name": "Tên vật tư",
+            "data_type_id": "1"
+        },
+        {
+            "id": "7",
+            "proposal_types_id": "2",
+            "index": 3,
+            "field_name": "Số lượng",
+            "data_type_id": "1"
+        },
+        {
+            "id": "8",
+            "proposal_types_id": "2",
+            "index": 4,
+            "field_name": "Đơn gía",
+            "data_type_id": "1"
+        }
+    ],
+    "approval_steps": [
+        {
+            "id": "1",
+            "approval_step_name": "Phê duyệt",
+            "approval_step_index": 1,
+            "proposal_types_id": "1"
+        },
+        {
+            "id": "2",
+            "approval_step_name": "Kế toán",
+            "approval_step_index": 1,
+            "proposal_types_id": "2"
+        }
+    ],
+    "positions_employees": [
+        {
+            "employees_id": "38",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "22",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "25",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "1",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "22",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "15",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "12",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "12",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "23",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "28",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "38",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "22",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "25",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "1",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "22",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "15",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "12",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "12",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "23",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "28",
+            "positions_id": "17"
+        },
+        {
+            "employees_id": "34",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "21",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "32",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "42",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "20",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "17",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "29",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "22",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "17",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "28",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "34",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "21",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "32",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "42",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "20",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "17",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "29",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "22",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "17",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "28",
+            "positions_id": "8"
+        },
+        {
+            "employees_id": "9",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "12",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "3",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "42",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "6",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "2",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "37",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "22",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "4",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "2",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "9",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "12",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "3",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "42",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "6",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "2",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "37",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "22",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "4",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "2",
+            "positions_id": "11"
+        },
+        {
+            "employees_id": "46",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "16",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "10",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "33",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "31",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "12",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "11",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "13",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "29",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "27",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "46",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "16",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "10",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "33",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "31",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "12",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "11",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "13",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "29",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "27",
+            "positions_id": "14"
+        },
+        {
+            "employees_id": "41",
+            "positions_id": "1"
+        },
+        {
+            "employees_id": "42",
+            "positions_id": "3"
+        },
+        {
+            "employees_id": "43",
+            "positions_id": "4"
+        },
+        {
+            "employees_id": "45",
+            "positions_id": "10"
+        },
+        {
+            "employees_id": "46",
+            "positions_id": "13"
+        },
+        {
+            "employees_id": "47",
+            "positions_id": "16"
+        },
+        {
+            "employees_id": "48",
+            "positions_id": "19"
+        }
+    ],
+    "proposal_permissions": [
+        {
+            "id": "1",
+            "proposal_types_id": "2",
+            "departments_id": "",
+            "positions_id": "",
+            "employees_id": "41"
+        },
+        {
+            "id": "2",
+            "proposal_types_id": "2",
+            "departments_id": "",
+            "positions_id": "",
+            "employees_id": "43"
+        }
+    ],
+    "approval_step_details": [
+        {
+            "id": "1",
+            "approval_steps_id": "1",
+            "employees_id": "",
+            "departments_id": "",
+            "positions_id": "16"
+        },
+        {
+            "id": "2",
+            "approval_steps_id": "1",
+            "employees_id": "",
+            "departments_id": "",
+            "positions_id": "7"
+        },
+        {
+            "id": "3",
+            "approval_steps_id": "1",
+            "employees_id": "",
+            "departments_id": "",
+            "positions_id": "10"
+        },
+        {
+            "id": "4",
+            "approval_steps_id": "1",
+            "employees_id": "",
+            "departments_id": "",
+            "positions_id": "13"
+        }
+    ],
+    "proposals": [
+        {
+            "id": "1",
+            "proposal_type_id": "1",
+            "creator_id": "3",
+            "status_id": "5"
+        },
+        {
+            "id": "2",
+            "proposal_type_id": "1",
+            "creator_id": "31",
+            "status_id": "5"
+        },
+        {
+            "id": "3",
+            "proposal_type_id": "1",
+            "creator_id": "17",
+            "status_id": "5"
+        },
+        {
+            "id": "4",
+            "proposal_type_id": "1",
+            "creator_id": "27",
+            "status_id": "5"
+        },
+        {
+            "id": "5",
+            "proposal_type_id": "1",
+            "creator_id": "17",
+            "status_id": "5"
+        },
+        {
+            "id": "6",
+            "proposal_type_id": "1",
+            "creator_id": "25",
+            "status_id": "5"
+        },
+        {
+            "id": "7",
+            "proposal_type_id": "1",
+            "creator_id": "18",
+            "status_id": "5"
+        },
+        {
+            "id": "8",
+            "proposal_type_id": "1",
+            "creator_id": "7",
+            "status_id": "5"
+        },
+        {
+            "id": "9",
+            "proposal_type_id": "1",
+            "creator_id": "31",
+            "status_id": "5"
+        },
+        {
+            "id": "10",
+            "proposal_type_id": "1",
+            "creator_id": "35",
+            "status_id": "5"
+        },
+        {
+            "id": "11",
+            "proposal_type_id": "1",
+            "creator_id": "3",
+            "status_id": "5"
+        },
+        {
+            "id": "12",
+            "proposal_type_id": "1",
+            "creator_id": "20",
+            "status_id": "5"
+        },
+        {
+            "id": "13",
+            "proposal_type_id": "1",
+            "creator_id": "3",
+            "status_id": "5"
+        },
+        {
+            "id": "14",
+            "proposal_type_id": "1",
+            "creator_id": "8",
+            "status_id": "5"
+        },
+        {
+            "id": "15",
+            "proposal_type_id": "1",
+            "creator_id": "10",
+            "status_id": "5"
+        },
+        {
+            "id": "16",
+            "proposal_type_id": "1",
+            "creator_id": "3",
+            "status_id": "5"
+        },
+        {
+            "id": "17",
+            "proposal_type_id": "1",
+            "creator_id": "40",
+            "status_id": "5"
+        },
+        {
+            "id": "18",
+            "proposal_type_id": "1",
+            "creator_id": "33",
+            "status_id": "5"
+        },
+        {
+            "id": "19",
+            "proposal_type_id": "1",
+            "creator_id": "38",
+            "status_id": "5"
+        },
+        {
+            "id": "20",
+            "proposal_type_id": "1",
+            "creator_id": "29",
+            "status_id": "5"
+        },
+        {
+            "id": "21",
+            "proposal_type_id": "1",
+            "creator_id": "18",
+            "status_id": "5"
+        },
+        {
+            "id": "22",
+            "proposal_type_id": "1",
+            "creator_id": "29",
+            "status_id": "5"
+        },
+        {
+            "id": "23",
+            "proposal_type_id": "1",
+            "creator_id": "17",
+            "status_id": "5"
+        },
+        {
+            "id": "24",
+            "proposal_type_id": "1",
+            "creator_id": "27",
+            "status_id": "5"
+        },
+        {
+            "id": "25",
+            "proposal_type_id": "1",
+            "creator_id": "6",
+            "status_id": "5"
+        },
+        {
+            "id": "26",
+            "proposal_type_id": "1",
+            "creator_id": "26",
+            "status_id": "5"
+        },
+        {
+            "id": "27",
+            "proposal_type_id": "1",
+            "creator_id": "5",
+            "status_id": "5"
+        },
+        {
+            "id": "28",
+            "proposal_type_id": "1",
+            "creator_id": "8",
+            "status_id": "5"
+        },
+        {
+            "id": "29",
+            "proposal_type_id": "1",
+            "creator_id": "40",
+            "status_id": "5"
+        },
+        {
+            "id": "30",
+            "proposal_type_id": "1",
+            "creator_id": "18",
+            "status_id": "5"
+        }
+    ],
+    "proposal_details": [
+        {
+            "id": "2",
+            "proposals_id": "1",
+            "index": "1",
+            "content": "Hết bàn yêu em gió đồng hương."
+        },
+        {
+            "id": "3",
+            "proposals_id": "1",
+            "index": "2",
+            "content": "Giết tủ hết lỗi.\nỜ hết sáu đang nước ờ thuyền vá hết."
+        },
+        {
+            "id": "4",
+            "proposals_id": "1",
+            "index": "3",
+            "content": "19963"
+        },
+        {
+            "id": "5",
+            "proposals_id": "1",
+            "index": "4",
+            "content": "Mây ờ mười.\nThuê nón không chín thích."
+        },
+        {
+            "id": "3",
+            "proposals_id": "2",
+            "index": "1",
+            "content": "Hương là trăng làm đỏ thế trăng chìm khoảng."
+        },
+        {
+            "id": "4",
+            "proposals_id": "2",
+            "index": "2",
+            "content": "Bốn quần giết gì hai biển thôi.\nMười chín vẽ thương vẽ tím trăng thích.\nNúi ba khoan anh tủ chín tôi dép.\nÁ con mây ruộng thôi.\nThương bàn là ghét ờ."
+        },
+        {
+            "id": "5",
+            "proposals_id": "2",
+            "index": "3",
+            "content": "3895"
+        },
+        {
+            "id": "6",
+            "proposals_id": "2",
+            "index": "4",
+            "content": "Làm bạn chỉ bảy bốn biển.\nKhông nước may viết anh xe năm.\nChìm em biết máy biết bảy kim tô hàng ngọt.\nViệc chín thế."
+        },
+        {
+            "id": "4",
+            "proposals_id": "3",
+            "index": "1",
+            "content": "Ghế con tui may xanh xuồng một mượn bốn đánh."
+        },
+        {
+            "id": "5",
+            "proposals_id": "3",
+            "index": "2",
+            "content": "Bạn không đá yêu.\nMượn giày ba nón lầu được.\nTôi đỏ cửa hai là hương thế khoan."
+        },
+        {
+            "id": "6",
+            "proposals_id": "3",
+            "index": "3",
+            "content": "7326"
+        },
+        {
+            "id": "7",
+            "proposals_id": "3",
+            "index": "4",
+            "content": "Leo biết sáu phá đánh ngọt."
+        },
+        {
+            "id": "5",
+            "proposals_id": "4",
+            "index": "1",
+            "content": "Chín tàu nước bè chìm áo."
+        },
+        {
+            "id": "6",
+            "proposals_id": "4",
+            "index": "2",
+            "content": "Lỗi trời biết đá tô cửa thuyền cái là đá.\nMây núi ghế vàng."
+        },
+        {
+            "id": "7",
+            "proposals_id": "4",
+            "index": "3",
+            "content": "2920"
+        },
+        {
+            "id": "8",
+            "proposals_id": "4",
+            "index": "4",
+            "content": "Cửa quê chìm giết nha gió bạn nghỉ tui ờ.\nQuần tôi thôi trăng ngọt trăng trời bơi phá một.\nTô giết năm bàn phá phá vẽ."
+        },
+        {
+            "id": "6",
+            "proposals_id": "5",
+            "index": "1",
+            "content": "Mua giết tím em hàng cửa áo."
+        },
+        {
+            "id": "7",
+            "proposals_id": "5",
+            "index": "2",
+            "content": "Vá ruộng em áo hóa nha bốn mướn thôi.\nYêu thế khoảng ghét may.\nĐộc tô thuê thích là bốn vàng hết mười nghỉ.\nXanh đã tủ chìm hết kim."
+        },
+        {
+            "id": "8",
+            "proposals_id": "5",
+            "index": "3",
+            "content": "25596"
+        },
+        {
+            "id": "9",
+            "proposals_id": "5",
+            "index": "4",
+            "content": "Giày xe dép xuồng mượn ghét ruộng vẽ bạn thích.\nNón cửa hết thích.\nĐược mượn leo làm đâu viết hết.\nÁc yêu đạp anh."
+        },
+        {
+            "id": "7",
+            "proposals_id": "6",
+            "index": "1",
+            "content": "Vẽ lỗi hết trời leo em núi làm mười cửa."
+        },
+        {
+            "id": "8",
+            "proposals_id": "6",
+            "index": "2",
+            "content": "May được thì biết cái nước xe kim là lầu."
+        },
+        {
+            "id": "9",
+            "proposals_id": "6",
+            "index": "3",
+            "content": "12479"
+        },
+        {
+            "id": "10",
+            "proposals_id": "6",
+            "index": "4",
+            "content": "Năm đã đang một hóa thôi."
+        },
+        {
+            "id": "8",
+            "proposals_id": "7",
+            "index": "1",
+            "content": "Hai hai bốn bốn đồng mua giày ghế hết."
+        },
+        {
+            "id": "9",
+            "proposals_id": "7",
+            "index": "2",
+            "content": "Yêu viết đập nhà mướn là em việc áo.\nKim một thuyền mượn ác được hết nghỉ."
+        },
+        {
+            "id": "10",
+            "proposals_id": "7",
+            "index": "3",
+            "content": "6882"
+        },
+        {
+            "id": "11",
+            "proposals_id": "7",
+            "index": "4",
+            "content": "Mua may bơi kim xuồng bảy độc thích ba nhà.\nBạn giết chỉ may ghế sáu dép."
+        },
+        {
+            "id": "9",
+            "proposals_id": "8",
+            "index": "1",
+            "content": "Đánh em nón hàng hàng."
+        },
+        {
+            "id": "10",
+            "proposals_id": "8",
+            "index": "2",
+            "content": "Được đạp độc thích tám hóa.\nỪ leo leo một con mua.\nHết thế không bạn chết trời.\nCon em tui núi ghét đâu mướn bơi."
+        },
+        {
+            "id": "11",
+            "proposals_id": "8",
+            "index": "3",
+            "content": "2105"
+        },
+        {
+            "id": "12",
+            "proposals_id": "8",
+            "index": "4",
+            "content": "Ruộng mười khâu sáu biết quần đánh lỗi.\nĐang thuê ba.\nLỗi cửa gì bè hương cửa chết ngọt áo chìm.\nÁc nhà bốn thích thôi là ừ viết."
+        },
+        {
+            "id": "10",
+            "proposals_id": "9",
+            "index": "1",
+            "content": "Nón mây thế phá nước bơi."
+        },
+        {
+            "id": "11",
+            "proposals_id": "9",
+            "index": "2",
+            "content": "Bạn mượn ghế."
+        },
+        {
+            "id": "12",
+            "proposals_id": "9",
+            "index": "3",
+            "content": "30594"
+        },
+        {
+            "id": "13",
+            "proposals_id": "9",
+            "index": "4",
+            "content": "Sáu đập hương quê chín một không.\nTím ghét xuồng sáu hai bảy biển thế.\nĐồng ừ hai bơi đồng ác bơi.\nỪ tôi mượn khâu gì anh thương mây."
+        },
+        {
+            "id": "11",
+            "proposals_id": "10",
+            "index": "1",
+            "content": "Đỏ ghét chỉ ờ mướn viết chết thế."
+        },
+        {
+            "id": "12",
+            "proposals_id": "10",
+            "index": "2",
+            "content": "Hóa hóa độc độc sáu không ngọt bàn mua.\nKhâu tô khoan thì đỏ đánh.\nGiày bạn biển quê đã."
+        },
+        {
+            "id": "13",
+            "proposals_id": "10",
+            "index": "3",
+            "content": "1557"
+        },
+        {
+            "id": "14",
+            "proposals_id": "10",
+            "index": "4",
+            "content": "Độc độc giết mây đã độc thuê máy.\nChìm là xe.\nXe quê tím thuyền tàu con làm."
+        },
+        {
+            "id": "12",
+            "proposals_id": "11",
+            "index": "1",
+            "content": "Viết viết một hai."
+        },
+        {
+            "id": "13",
+            "proposals_id": "11",
+            "index": "2",
+            "content": "Hàng thuyền ba nha tôi.\nHết việc tím xuồng khoan bàn ruộng vàng ngọt bốn."
+        },
+        {
+            "id": "14",
+            "proposals_id": "11",
+            "index": "3",
+            "content": "14355"
+        },
+        {
+            "id": "15",
+            "proposals_id": "11",
+            "index": "4",
+            "content": "Áo lầu hết bàn ghế đã á."
+        },
+        {
+            "id": "13",
+            "proposals_id": "12",
+            "index": "1",
+            "content": "Giày độc thuê gió nghỉ đánh được mây là ngọt."
+        },
+        {
+            "id": "14",
+            "proposals_id": "12",
+            "index": "2",
+            "content": "Được đang ờ hết sáu leo áo yêu.\nNhà mây chết cửa nhà nước biết sáu bạn."
+        },
+        {
+            "id": "15",
+            "proposals_id": "12",
+            "index": "3",
+            "content": "7849"
+        },
+        {
+            "id": "16",
+            "proposals_id": "12",
+            "index": "4",
+            "content": "Viết ngọt mướn mười may được lỗi.\nĐánh biết thuê.\nThì xe đỏ đập quần."
+        },
+        {
+            "id": "14",
+            "proposals_id": "13",
+            "index": "1",
+            "content": "Việc nhà lỗi ba vá leo tám."
+        },
+        {
+            "id": "15",
+            "proposals_id": "13",
+            "index": "2",
+            "content": "Tím thôi đánh việc một.\nThích thôi leo là chỉ làm.\nÁc thích chết gió bơi việc dép.\nGiày hàng hai viết em hóa lỗi thì hai."
+        },
+        {
+            "id": "16",
+            "proposals_id": "13",
+            "index": "3",
+            "content": "16365"
+        },
+        {
+            "id": "17",
+            "proposals_id": "13",
+            "index": "4",
+            "content": "Chìm ghét mười nước á.\nNăm đồng vàng.\nLàm ghét kim bè thuê hết thích.\nTui nước bạn một gió ba.\nNúi độc là trăng."
+        },
+        {
+            "id": "15",
+            "proposals_id": "14",
+            "index": "1",
+            "content": "Bạn vẽ núi."
+        },
+        {
+            "id": "16",
+            "proposals_id": "14",
+            "index": "2",
+            "content": "Tím đang ruộng nón bốn.\nGhế mua nghỉ."
+        },
+        {
+            "id": "17",
+            "proposals_id": "14",
+            "index": "3",
+            "content": "29558"
+        },
+        {
+            "id": "18",
+            "proposals_id": "14",
+            "index": "4",
+            "content": "Kim năm vẽ lỗi khâu cửa mượn."
+        },
+        {
+            "id": "16",
+            "proposals_id": "15",
+            "index": "1",
+            "content": "Ba cái tàu."
+        },
+        {
+            "id": "17",
+            "proposals_id": "15",
+            "index": "2",
+            "content": "Không tám mười khoảng hết tủ ba."
+        },
+        {
+            "id": "18",
+            "proposals_id": "15",
+            "index": "3",
+            "content": "18337"
+        },
+        {
+            "id": "19",
+            "proposals_id": "15",
+            "index": "4",
+            "content": "Ngọt á năm khâu quê nghỉ bốn em tím thuyền.\nBè chỉ gì thuyền không xanh bàn đỏ viết thế."
+        },
+        {
+            "id": "17",
+            "proposals_id": "16",
+            "index": "1",
+            "content": "Thương tôi yêu chìm tô thì bè tím cái."
+        },
+        {
+            "id": "18",
+            "proposals_id": "16",
+            "index": "2",
+            "content": "Đã xanh biển trăng xuồng một bè lầu đồng vẽ.\nĐánh tui mây.\nHóa vẽ việc khoan cửa.\nNha viết ruộng thương hàng."
+        },
+        {
+            "id": "19",
+            "proposals_id": "16",
+            "index": "3",
+            "content": "22395"
+        },
+        {
+            "id": "20",
+            "proposals_id": "16",
+            "index": "4",
+            "content": "Bạn con ờ con mượn ác xanh vá lỗi tủ.\nTrăng đánh ngọt quê.\nĐá khoan thế may.\nCon kim xe được."
+        },
+        {
+            "id": "18",
+            "proposals_id": "17",
+            "index": "1",
+            "content": "Tôi một may em một ghét thích núi."
+        },
+        {
+            "id": "19",
+            "proposals_id": "17",
+            "index": "2",
+            "content": "Xuồng hết sáu thôi chìm hàng hóa.\nBạn em mười gì.\nThôi làm giết mướn trời bơi anh áo.\nViệc năm thuyền đỏ giày được gió chết tui.\nMượn bốn đâu."
+        },
+        {
+            "id": "20",
+            "proposals_id": "17",
+            "index": "3",
+            "content": "6594"
+        },
+        {
+            "id": "21",
+            "proposals_id": "17",
+            "index": "4",
+            "content": "Hóa chín mướn.\nQuê phá nghỉ nha đá ghét xe việc.\nTrời tô khoảng tàu áo đỏ.\nNgọt cái hàng được.\nYêu đỏ thì."
+        },
+        {
+            "id": "19",
+            "proposals_id": "18",
+            "index": "1",
+            "content": "Xanh đang sáu vàng con vá được."
+        },
+        {
+            "id": "20",
+            "proposals_id": "18",
+            "index": "2",
+            "content": "Kim biết nón.\nHết bơi yêu á hết đập nước cửa hàng khoảng."
+        },
+        {
+            "id": "21",
+            "proposals_id": "18",
+            "index": "3",
+            "content": "24434"
+        },
+        {
+            "id": "22",
+            "proposals_id": "18",
+            "index": "4",
+            "content": "Thích xanh nón vàng.\nThuyền anh xe khoan chỉ hết được thôi tám.\nKhoan khoảng giết hương hàng.\nPhá thì tui quê tàu yêu ờ ghét viết."
+        },
+        {
+            "id": "20",
+            "proposals_id": "19",
+            "index": "1",
+            "content": "Mượn tám thích tám xuồng phá ba được bàn."
+        },
+        {
+            "id": "21",
+            "proposals_id": "19",
+            "index": "2",
+            "content": "Ừ khoan vá một đâu xuồng gì đồng khâu.\nỪ biết năm gì viết ờ.\nMượn ghế mười mượn."
+        },
+        {
+            "id": "22",
+            "proposals_id": "19",
+            "index": "3",
+            "content": "5889"
+        },
+        {
+            "id": "23",
+            "proposals_id": "19",
+            "index": "4",
+            "content": "Khoan xanh hàng tô ờ tui nha xe.\nGhét khoảng hương nghỉ bốn hóa lỗi.\nLà quê một tàu tám mướn phá.\nRuộng tím nước thế việc.\nKhông hết yêu trăng nghỉ viết là mua ác dép."
+        },
+        {
+            "id": "21",
+            "proposals_id": "20",
+            "index": "1",
+            "content": "Ừ hương thuyền yêu viết hết khoan ờ việc."
+        },
+        {
+            "id": "22",
+            "proposals_id": "20",
+            "index": "2",
+            "content": "Ngọt kim ruộng độc quê hai cái tôi.\nTrăng xanh mua mướn nha.\nBạn yêu tím.\nGhế kim lầu."
+        },
+        {
+            "id": "23",
+            "proposals_id": "20",
+            "index": "3",
+            "content": "7612"
+        },
+        {
+            "id": "24",
+            "proposals_id": "20",
+            "index": "4",
+            "content": "Nước tàu nha khâu em hóa bàn tôi chỉ đỏ.\nThuyền trăng gì ngọt."
+        },
+        {
+            "id": "22",
+            "proposals_id": "21",
+            "index": "1",
+            "content": "Anh sáu phá thế máy dép cái đánh."
+        },
+        {
+            "id": "23",
+            "proposals_id": "21",
+            "index": "2",
+            "content": "Giày ghét giày thì.\nỜ gì làm bè một cửa ba bè.\nHai khoan năm con.\nBiển biết hương sáu phá núi đâu."
+        },
+        {
+            "id": "24",
+            "proposals_id": "21",
+            "index": "3",
+            "content": "23233"
+        },
+        {
+            "id": "25",
+            "proposals_id": "21",
+            "index": "4",
+            "content": "Mướn trăng đánh chín vá.\nNón vàng ba được ừ may sáu tím.\nBàn mượn hóa hương nhà ghế mua thuyền."
+        },
+        {
+            "id": "23",
+            "proposals_id": "22",
+            "index": "1",
+            "content": "Đâu dép xuồng mướn biển thích bàn."
+        },
+        {
+            "id": "24",
+            "proposals_id": "22",
+            "index": "2",
+            "content": "Không đồng yêu chín quần may nón đang máy.\nBiển đang tô biển kim."
+        },
+        {
+            "id": "25",
+            "proposals_id": "22",
+            "index": "3",
+            "content": "32241"
+        },
+        {
+            "id": "26",
+            "proposals_id": "22",
+            "index": "4",
+            "content": "Trời núi xe.\nSáu ờ vàng đá mười tủ một xe.\nThích thì mua con xanh hai may là.\nKhoan ừ kim thôi.\nNha tám bốn tô nghỉ."
+        },
+        {
+            "id": "24",
+            "proposals_id": "23",
+            "index": "1",
+            "content": "Nghỉ anh đạp kim bốn không."
+        },
+        {
+            "id": "25",
+            "proposals_id": "23",
+            "index": "2",
+            "content": "Năm đồng một."
+        },
+        {
+            "id": "26",
+            "proposals_id": "23",
+            "index": "3",
+            "content": "9038"
+        },
+        {
+            "id": "27",
+            "proposals_id": "23",
+            "index": "4",
+            "content": "Ác ghế ừ đâu núi tám phá mười tủ.\nHết giày ác giết vàng yêu độc hết á.\nMười tám gì ác gì khoảng ừ bảy tám ba.\nNgọt ác núi bè.\nMay mướn vá đạp thuê núi ác mua may gì."
+        },
+        {
+            "id": "25",
+            "proposals_id": "24",
+            "index": "1",
+            "content": "Thuyền bốn hết đạp hai."
+        },
+        {
+            "id": "26",
+            "proposals_id": "24",
+            "index": "2",
+            "content": "Quần đạp biển là giết á ờ ghét gì.\nBạn viết viết.\nHai khoảng viết."
+        },
+        {
+            "id": "27",
+            "proposals_id": "24",
+            "index": "3",
+            "content": "9166"
+        },
+        {
+            "id": "28",
+            "proposals_id": "24",
+            "index": "4",
+            "content": "Đập là leo.\nNúi chết một hết may mây giết."
+        },
+        {
+            "id": "26",
+            "proposals_id": "25",
+            "index": "1",
+            "content": "Thì việc vẽ."
+        },
+        {
+            "id": "27",
+            "proposals_id": "25",
+            "index": "2",
+            "content": "Biết vàng hóa đạp bảy thôi ghét mua."
+        },
+        {
+            "id": "28",
+            "proposals_id": "25",
+            "index": "3",
+            "content": "12698"
+        },
+        {
+            "id": "29",
+            "proposals_id": "25",
+            "index": "4",
+            "content": "Nhà nón chìm bạn thế leo mượn bơi hai.\nVàng xanh leo ba nha sáu may đâu bàn là."
+        },
+        {
+            "id": "27",
+            "proposals_id": "26",
+            "index": "1",
+            "content": "Thuê đánh máy dép tím thế bè thuê mướn."
+        },
+        {
+            "id": "28",
+            "proposals_id": "26",
+            "index": "2",
+            "content": "Quê hàng tui vẽ anh ghế nha làm máy á.\nThuê trời hai lỗi chết đồng một xanh nón nước.\nNgọt thì dép yêu nha.\nChín tui đang thế hàng làm."
+        },
+        {
+            "id": "29",
+            "proposals_id": "26",
+            "index": "3",
+            "content": "74"
+        },
+        {
+            "id": "30",
+            "proposals_id": "26",
+            "index": "4",
+            "content": "Bảy thuyền ngọt tôi chìm chìm."
+        },
+        {
+            "id": "28",
+            "proposals_id": "27",
+            "index": "1",
+            "content": "Giày biết khâu hương biển thôi hai em tô là."
+        },
+        {
+            "id": "29",
+            "proposals_id": "27",
+            "index": "2",
+            "content": "Một chết biển hóa khâu đập.\nBiển vàng mười.\nLà con tàu xanh khoan thế tô máy tàu chết."
+        },
+        {
+            "id": "30",
+            "proposals_id": "27",
+            "index": "3",
+            "content": "29400"
+        },
+        {
+            "id": "31",
+            "proposals_id": "27",
+            "index": "4",
+            "content": "Vàng sáu vàng một."
+        },
+        {
+            "id": "29",
+            "proposals_id": "28",
+            "index": "1",
+            "content": "Vàng nón khoan đập á."
+        },
+        {
+            "id": "30",
+            "proposals_id": "28",
+            "index": "2",
+            "content": "Khâu thế ngọt hương làm đập hết gió.\nĐâu đã làm tủ ừ xuồng ghế là gì khâu."
+        },
+        {
+            "id": "31",
+            "proposals_id": "28",
+            "index": "3",
+            "content": "2082"
+        },
+        {
+            "id": "32",
+            "proposals_id": "28",
+            "index": "4",
+            "content": "Thì ừ thích việc hóa độc một đập không.\nYêu khoảng mây đang xuồng.\nTô mười đang ừ đâu quê tô nón ruộng nha.\nGhét biển đồng."
+        },
+        {
+            "id": "30",
+            "proposals_id": "29",
+            "index": "1",
+            "content": "Đạp á đỏ khoan máy một ghét."
+        },
+        {
+            "id": "31",
+            "proposals_id": "29",
+            "index": "2",
+            "content": "Đập việc bơi bốn độc sáu bè."
+        },
+        {
+            "id": "32",
+            "proposals_id": "29",
+            "index": "3",
+            "content": "2842"
+        },
+        {
+            "id": "33",
+            "proposals_id": "29",
+            "index": "4",
+            "content": "Chìm chết xanh lỗi thế.\nNón làm tui sáu bạn mua.\nHai viết tôi áo.\nĐập tôi lầu đánh ừ nước.\nÁo bốn đâu máy bốn thích ghế áo bảy."
+        },
+        {
+            "id": "31",
+            "proposals_id": "30",
+            "index": "1",
+            "content": "Khoảng ghế đá chỉ tô."
+        },
+        {
+            "id": "32",
+            "proposals_id": "30",
+            "index": "2",
+            "content": "Đã xuồng em giày được xe.\nBiết mười đang nón mua lầu làm tủ."
+        },
+        {
+            "id": "33",
+            "proposals_id": "30",
+            "index": "3",
+            "content": "3010"
+        },
+        {
+            "id": "34",
+            "proposals_id": "30",
+            "index": "4",
+            "content": "Tàu đỏ tô trăng tám lỗi gió.\nBốn khâu biết trăng khoảng ác gió mướn tủ chín.\nHết mười nước thì tám bàn.\nNhà tám ác.\nThì dép bàn."
+        }
+    ]
+}
