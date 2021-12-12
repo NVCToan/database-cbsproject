@@ -1,13 +1,13 @@
--- MySQL dump 10.13  Distrib 8.0.22, for macos10.15 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.13, for Win64 (x86_64)
 --
 -- Host: localhost    Database: cmd
 -- ------------------------------------------------------
--- Server version	8.0.22
+-- Server version	8.0.13
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!50503 SET NAMES utf8mb4 */;
+ SET NAMES utf8mb4 ;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -19,7 +19,7 @@
 -- Current Database: `cmd`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `cmd` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `cmd` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
 
 USE `cmd`;
 
@@ -29,13 +29,13 @@ USE `cmd`;
 
 DROP TABLE IF EXISTS `approval_step_details`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `approval_step_details` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `approval_step_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `employee_id` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `department_id` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `position_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `approval_step_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `employee_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `department_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `position_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_approval_step_details_approval_steps1_idx` (`approval_step_id`),
   KEY `fk_approval_step_details_employees1_idx` (`employee_id`),
@@ -64,12 +64,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `approval_steps`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `approval_steps` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `approval_step_name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `approval_step_index` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `proposal_type_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `approval_step_name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `approval_step_index` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `proposal_type_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_approval_steps_proposal_types1_idx` (`proposal_type_id`),
   CONSTRAINT `fk_approval_steps_proposal_types1` FOREIGN KEY (`proposal_type_id`) REFERENCES `proposal_types` (`id`)
@@ -92,11 +92,11 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `auth`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `auth` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `role_id` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `menu_id` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `role_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `menu_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `permission` bit(1) DEFAULT NULL,
   `active_flag` bit(1) DEFAULT NULL,
   `create_date` timestamp NULL DEFAULT NULL,
@@ -124,11 +124,11 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `data_types`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `data_types` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` varchar(500) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` varchar(500) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -149,16 +149,16 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `departments`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `departments` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `farther_department_id` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `manager_id` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `create_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `create_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `farther_department_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `manager_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `create_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `create_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -179,21 +179,21 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `employees`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `employees` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `date _of_birth` varchar(20) COLLATE utf8_unicode_ci DEFAULT '0',
-  `email` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `phone_number` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `manager_id` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `create_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `create_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `date_of_birth` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `active_flag` tinyint DEFAULT NULL,
-  `department_id` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `date _of_birth` varchar(20) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT '0',
+  `email` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `phone_number` varchar(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `manager_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `create_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `create_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `date_of_birth` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `active_flag` tinyint(4) DEFAULT NULL,
+  `department_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -214,13 +214,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `menu`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `menu` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `parent_id` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `url` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `name` varchar(100) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `order_index` int DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `parent_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `url` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `order_index` int(11) DEFAULT NULL,
   `create_date` timestamp NULL DEFAULT NULL,
   `update_date` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -242,10 +242,10 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `options`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `options` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -266,10 +266,10 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `permissions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `permissions` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -290,18 +290,18 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `positions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `positions` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `department_id` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `is_manager` tinyint DEFAULT NULL,
-  `create_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `create_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `team_id` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `role_id` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `department_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `is_manager` tinyint(4) DEFAULT NULL,
+  `create_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `create_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `team_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `role_id` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_chucvu_phongban1_idx` (`department_id`),
   KEY `fk_positions_teams1_idx` (`team_id`),
@@ -328,10 +328,10 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `positions_employees`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `positions_employees` (
-  `employee_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `position_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `employee_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `position_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`employee_id`,`position_id`),
   KEY `fk_employees_has_positions_positions1_idx` (`position_id`),
   KEY `fk_employees_has_positions_employees1_idx` (`employee_id`),
@@ -356,16 +356,16 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `proposal_details`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `proposal_details` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `proposal_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `proposal_detail_index` int DEFAULT NULL,
-  `content` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `create_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `create_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `proposal_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `proposal_detail_index` int(11) DEFAULT NULL,
+  `content` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `create_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `create_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_proposal_details_proposals1_idx` (`proposal_id`),
   CONSTRAINT `fk_proposal_details_proposals1` FOREIGN KEY (`proposal_id`) REFERENCES `proposals` (`id`)
@@ -388,13 +388,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `proposal_permissions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `proposal_permissions` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `proposal_type_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `department_id` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `position_id` varchar(10) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `employee_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `proposal_type_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `department_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `position_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `employee_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_proposal_permissions_proposal_types1_idx` (`proposal_type_id`),
   KEY `fk_proposal_permissions_departments1_idx` (`department_id`),
@@ -423,17 +423,17 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `proposal_type_details`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `proposal_type_details` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `proposal_types_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `proposal_type_index` int DEFAULT NULL,
-  `field_name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `data_type_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `create_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `create_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `proposal_types_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `proposal_type_index` int(11) DEFAULT NULL,
+  `field_name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `data_type_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `create_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `create_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_type_details_data_types1_idx` (`data_type_id`),
   KEY `fk_proposal_type_details_proposal_types1_idx` (`proposal_types_id`),
@@ -458,11 +458,11 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `proposal_types`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `proposal_types` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `active_flag` tinyint DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `active_flag` tinyint(4) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -483,12 +483,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `proposals`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `proposals` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `proposal_type_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `creator_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `status_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `proposal_type_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `creator_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `status_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_dexuat_TrangThai1_idx` (`status_id`),
   KEY `fk_proposals_proposal_types1_idx` (`proposal_type_id`),
@@ -515,16 +515,16 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `role_details`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `role_details` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `option_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `role_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `permission_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `create_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `create_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `option_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `role_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `permission_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `create_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `create_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_role_details_options1_idx` (`option_id`),
   KEY `fk_role_details_roles1_idx` (`role_id`),
@@ -551,10 +551,10 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `roles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `roles` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `name` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -575,10 +575,10 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `statuses`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `statuses` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -599,17 +599,17 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `task_details`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `task_details` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `receiver_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `task_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `title` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `description` text COLLATE utf8_unicode_ci,
-  `create_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_by` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `create_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `modify_date` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `receiver_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `task_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `title` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `description` text CHARACTER SET utf8 COLLATE utf8_unicode_ci,
+  `create_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `create_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `modify_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_GiaoViec_nhanvien1_idx` (`receiver_id`),
   KEY `fk_task_details_tasks1_idx` (`task_id`),
@@ -634,11 +634,11 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tasks`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `tasks` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `status_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `creator_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `status_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `creator_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_tasks_statuses1_idx` (`status_id`),
   KEY `fk_tasks_employees1_idx` (`creator_id`),
@@ -663,10 +663,10 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `teams`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `teams` (
-  `id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `name` varchar(45) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -686,10 +686,10 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `teams_employees`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+ SET character_set_client = utf8mb4 ;
 CREATE TABLE `teams_employees` (
-  `teams_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
-  `employees_id` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `teams_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `employees_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`teams_id`,`employees_id`),
   KEY `fk_teams_has_employees_employees1_idx` (`employees_id`),
   KEY `fk_teams_has_employees_teams1_idx` (`teams_id`),
@@ -716,4 +716,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-11 23:37:17
+-- Dump completed on 2021-12-12 19:50:07

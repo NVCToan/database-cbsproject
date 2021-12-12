@@ -1,1 +1,0 @@
-mysqldump -uroot -p123456 --databases cmd -r NameofBackup.sql
