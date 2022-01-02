@@ -1,13 +1,13 @@
--- MySQL dump 10.13  Distrib 8.0.13, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
 --
 -- Host: localhost    Database: cmd
 -- ------------------------------------------------------
--- Server version	8.0.13
+-- Server version	8.0.27
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
- SET NAMES utf8mb4 ;
+/*!50503 SET NAMES utf8mb4 */;
 /*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
 /*!40103 SET TIME_ZONE='+00:00' */;
 /*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
@@ -19,7 +19,7 @@
 -- Current Database: `cmd`
 --
 
-CREATE DATABASE /*!32312 IF NOT EXISTS*/ `cmd` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */;
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `cmd` /*!40100 DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 
 USE `cmd`;
 
@@ -29,23 +29,26 @@ USE `cmd`;
 
 DROP TABLE IF EXISTS `approval_step_details`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `approval_step_details` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `approval_step_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `employee_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `department_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `position_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `postion_id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_approval_step_details_approval_steps1_idx` (`approval_step_id`),
   KEY `fk_approval_step_details_employees1_idx` (`employee_id`),
   KEY `fk_approval_step_details_departments1_idx` (`department_id`),
   KEY `fk_approval_step_details_positions1_idx` (`position_id`),
+  KEY `FK30w3775elc9in4ufe3122b4v8` (`postion_id`),
+  CONSTRAINT `FK30w3775elc9in4ufe3122b4v8` FOREIGN KEY (`postion_id`) REFERENCES `positions` (`id`),
   CONSTRAINT `fk_approval_step_details_approval_steps1` FOREIGN KEY (`approval_step_id`) REFERENCES `approval_steps` (`id`),
   CONSTRAINT `fk_approval_step_details_departments1` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`),
   CONSTRAINT `fk_approval_step_details_employees1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`),
   CONSTRAINT `fk_approval_step_details_positions1` FOREIGN KEY (`position_id`) REFERENCES `positions` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -54,7 +57,7 @@ CREATE TABLE `approval_step_details` (
 
 LOCK TABLES `approval_step_details` WRITE;
 /*!40000 ALTER TABLE `approval_step_details` DISABLE KEYS */;
-INSERT INTO `approval_step_details` VALUES ('1','1',NULL,NULL,'16'),('2','1',NULL,NULL,'7'),('3','1',NULL,NULL,'10'),('4','1',NULL,NULL,'13');
+INSERT INTO `approval_step_details` VALUES ('1','1',NULL,NULL,'16',NULL),('2','1',NULL,NULL,'7',NULL),('3','1',NULL,NULL,'10',NULL),('4','1',NULL,NULL,'13',NULL);
 /*!40000 ALTER TABLE `approval_step_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -64,7 +67,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `approval_steps`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `approval_steps` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `approval_step_name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -73,7 +76,7 @@ CREATE TABLE `approval_steps` (
   PRIMARY KEY (`id`),
   KEY `fk_approval_steps_proposal_types1_idx` (`proposal_type_id`),
   CONSTRAINT `fk_approval_steps_proposal_types1` FOREIGN KEY (`proposal_type_id`) REFERENCES `proposal_types` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -92,13 +95,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `auth`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `auth` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `role_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `menu_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `permission` bit(1) DEFAULT NULL,
-  `active_flag` bit(1) DEFAULT NULL,
+  `permission` tinyint DEFAULT '1',
+  `active_flag` tinyint DEFAULT '1',
   `create_date` timestamp NULL DEFAULT NULL,
   `update_date` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -106,7 +109,7 @@ CREATE TABLE `auth` (
   KEY `fk_menu_auth_idx` (`menu_id`),
   CONSTRAINT `fk_menu_auth` FOREIGN KEY (`menu_id`) REFERENCES `menu` (`id`),
   CONSTRAINT `fk_role_auth` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -124,13 +127,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `data_types`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `data_types` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `description` varchar(500) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -149,7 +152,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `departments`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `departments` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -159,8 +162,9 @@ CREATE TABLE `departments` (
   `modify_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `create_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `modify_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `father_department_id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -169,8 +173,34 @@ CREATE TABLE `departments` (
 
 LOCK TABLES `departments` WRITE;
 /*!40000 ALTER TABLE `departments` DISABLE KEYS */;
-INSERT INTO `departments` VALUES ('1','Ban Quản Lý KTX Cỏ May','0','0',NULL,NULL,NULL,NULL),('10','Truyền thông','1','0',NULL,NULL,NULL,NULL),('11','Sinh viên','1','0',NULL,NULL,NULL,NULL),('2','Bảo trì - Bảo dưỡng CSVC KTX','1','0',NULL,NULL,NULL,NULL),('3','Đội sửa chữa','2','0',NULL,NULL,NULL,NULL),('4','Tầng 1','2','0',NULL,NULL,NULL,NULL),('5','Tầng 2','2','0',NULL,NULL,NULL,NULL),('6','Tầng 3','2','0',NULL,NULL,NULL,NULL),('7','Tầng trệt','2','0',NULL,NULL,NULL,NULL),('8','Kiểm tra và giám sát sinh viên','1','0',NULL,NULL,NULL,NULL),('9','Tổ chức sự kiện','1','0',NULL,NULL,NULL,NULL);
+INSERT INTO `departments` VALUES ('1','Ban Quản Lý KTX Cỏ May','0','0',NULL,NULL,NULL,NULL,NULL),('10','Truyền thông','1','0',NULL,NULL,NULL,NULL,NULL),('11','Sinh viên','1','0',NULL,NULL,NULL,NULL,NULL),('2','Bảo trì - Bảo dưỡng CSVC KTX','1','0',NULL,NULL,NULL,NULL,NULL),('3','Đội sửa chữa','2','0',NULL,NULL,NULL,NULL,NULL),('4','Tầng 1','2','0',NULL,NULL,NULL,NULL,NULL),('5','Tầng 2','2','0',NULL,NULL,NULL,NULL,NULL),('6','Tầng 3','2','0',NULL,NULL,NULL,NULL,NULL),('7','Tầng trệt','2','0',NULL,NULL,NULL,NULL,NULL),('8','Kiểm tra và giám sát sinh viên','1','0',NULL,NULL,NULL,NULL,NULL),('9','Tổ chức sự kiện','1','0',NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `departments` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `departments_employees`
+--
+
+DROP TABLE IF EXISTS `departments_employees`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `departments_employees` (
+  `employee_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `department_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`department_id`,`employee_id`),
+  KEY `FKqhmnr4xyxbjmgtfl3tyj5vl5` (`employee_id`),
+  CONSTRAINT `FKgw4a3p764um6tpudrwbhmbsq9` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`),
+  CONSTRAINT `FKqhmnr4xyxbjmgtfl3tyj5vl5` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `departments_employees`
+--
+
+LOCK TABLES `departments_employees` WRITE;
+/*!40000 ALTER TABLE `departments_employees` DISABLE KEYS */;
+/*!40000 ALTER TABLE `departments_employees` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -179,7 +209,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `employees`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `employees` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -192,10 +222,10 @@ CREATE TABLE `employees` (
   `create_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `modify_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `date_of_birth` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `active_flag` tinyint(4) DEFAULT NULL,
+  `active_flag` tinyint DEFAULT '1',
   `department_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -204,7 +234,7 @@ CREATE TABLE `employees` (
 
 LOCK TABLES `employees` WRITE;
 /*!40000 ALTER TABLE `employees` DISABLE KEYS */;
-INSERT INTO `employees` VALUES ('1','Hùng Thịnh Đinh','0','ThyAnh79@yahoo.com','023 9324 5592',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('10','Thanh Tuấn Vương','0','VnHng61@hotmail.com','027 6223 0001',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('11','Trung Nguyên Nguyễn','0','CngLp_inh@yahoo.com','022 3304 2135',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('12','Bình Ðịnh Phùng','0','TrcLinh56@hotmail.com','026 8175 7901',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('13','Huy Khiêm Mai','0','Phn_Trn@yahoo.com','0210 4460 6144',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('14','Mrs. Hữu Nghĩa Đặng','0','ThiVn94@yahoo.com','029 9593 5529',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('15','Quỳnh Nhung Phạm I','0','MngLong_Ng39@yahoo.com','0294 7848 4548',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('16','Lan Vy Hà','0','NhMai.Trng@yahoo.com','0217 2635 1851',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('17','Diệu Ngà Bùi','0','KhcNinh94@hotmail.com','0278 5831 9727',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('18','Hiếu Hạnh Vũ PhD','0','VnThng.Phan18@yahoo.com','0223 5664 9908',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('19','Lệ Huyền Tăng','0','PhcNhn.Hong52@gmail.com','0274 4735 7681',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('2','An Tường Trịnh','0','Khnhan.Phm@yahoo.com','022 0066 6557',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('20','Minh Huấn Đỗ','0','MinhKhi.Phm66@yahoo.com','0260 1866 9551',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('21','Tịnh Như Ngô','0','Tn.Phan@gmail.com','026 0060 0384',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('22','Hải Phương Tô','0','ThnhCng.H81@hotmail.com','024 5176 3533',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('23','Huy Tường Tô','0','LiuOanh.Trng@hotmail.com','028 1997 8601',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('24','Nhã Yến Tô','0','CngHiu27@yahoo.com','0234 0783 5816',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('25','Kiên Cường Tăng MD','0','KimQuyn_Vng@yahoo.com','026 7006 4223',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('26','Nhã Hồng Lâm','0','DuyHng56@hotmail.com','029 7852 2092',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('27','Bảo Anh Lâm','0','GingUyn.Ng25@gmail.com','021 9353 3989',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('28','Việt Cương Dương','0','DLm.Trnh39@gmail.com','027 2231 3461',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('29','Kiên Bình Bùi','0','ThDuyt28@gmail.com','0269 0985 0461',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('3','Hoàng Duệ Trần I','0','NhAnh_Mai@hotmail.com','026 9470 9508',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('30','Mỹ Ngọc Dương','0','KhiTm_Vng@yahoo.com','022 4287 3879',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('31','Kim Sa Phạm','0','DuyBo_Vng@gmail.com','0296 0190 0409',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('32','Mr. Yến Loan Vương','0','VitDng_L@hotmail.com','028 5899 0562',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('33','Phương Tâm Trần','0','KiuDim.H@yahoo.com','023 9445 8427',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('34','Thanh Thư Bùi','0','ThanhVy13@gmail.com','0298 1083 6068',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('35','Ms. Quốc Hải Phùng','0','BoGiang_T@gmail.com','026 6671 2725',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('36','Miss Ngọc Khanh Phan','0','Thnht_Vng36@yahoo.com','0256 1592 5165',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('37','Thượng Cường Hoàng','0','ThinKim41@hotmail.com','0217 5648 8211',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('38','Tiểu Mi Trịnh','0','KhnhGiang18@gmail.com','029 1028 1191',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('39','Chấn Hùng Phùng','0','DuyNhng_H@gmail.com','0221 7287 8299',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('4','Ms. Thành Thiện Vũ','0','Tn.Ng@hotmail.com','026 3632 1049',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('40','Ánh Tuyết Đặng PhD','0','LanChi5@gmail.com','0228 8621 2541',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('41','Nguyễn Minh Dũng','0','nguyenminhdungtd98@gmail.com','0763934399',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('42','Nguyễn Văn Ký','0','nguyenky@gmail.com','03428284832',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('43','Nguyễn Võ Công Toàn','0','congtoan@gmail.com','0957839282',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('44','Thiên Thảo','0','thienthao@gmail.com','094883123',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('45','Vũ Thị Thu Thảo','0','thuthao@gmail.com','0948843123',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('46','Nguyễn Duỹ Long','0','duylong@gmail.com','0948843123',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('47','Nguyễn Thanh Tốt','0','thanhtot@gmail.com','0948843123',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('48','Minh Hồ','0','minhho@gmail.com','091263823',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('5','Ðức Thành Lê','0','PhngUyn65@yahoo.com','0279 4142 4708',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('6','Thượng Nghị Hồ','0','nhKim43@hotmail.com','0256 6920 8794',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('7','Ms. Hưng Ðạo Nguyễn','0','ThuDuyn_Phan@hotmail.com','0245 1679 8200',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('8','Việt Dũng Dương','0','KimThng_Vng14@hotmail.com','026 2312 7134',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL),('9','Hiếu Phong Dương','0','DngKhnh.Phan@yahoo.com','0295 6465 3055',NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `employees` VALUES ('1','Hùng Thịnh Đinh','0','ThyAnh79@yahoo.com','023 9324 5592',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('10','Thanh Tuấn Vương','0','VnHng61@hotmail.com','027 6223 0001',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('11','Trung Nguyên Nguyễn','0','CngLp_inh@yahoo.com','022 3304 2135',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('12','Bình Ðịnh Phùng','0','TrcLinh56@hotmail.com','026 8175 7901',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('13','Huy Khiêm Mai','0','Phn_Trn@yahoo.com','0210 4460 6144',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('14','Mrs. Hữu Nghĩa Đặng','0','ThiVn94@yahoo.com','029 9593 5529',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('15','Quỳnh Nhung Phạm I','0','MngLong_Ng39@yahoo.com','0294 7848 4548',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('16','Lan Vy Hà','0','NhMai.Trng@yahoo.com','0217 2635 1851',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('17','Diệu Ngà Bùi','0','KhcNinh94@hotmail.com','0278 5831 9727',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('18','Hiếu Hạnh Vũ PhD','0','VnThng.Phan18@yahoo.com','0223 5664 9908',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('19','Lệ Huyền Tăng','0','PhcNhn.Hong52@gmail.com','0274 4735 7681',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('2','An Tường Trịnh','0','Khnhan.Phm@yahoo.com','022 0066 6557',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('20','Minh Huấn Đỗ','0','MinhKhi.Phm66@yahoo.com','0260 1866 9551',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('21','Tịnh Như Ngô','0','Tn.Phan@gmail.com','026 0060 0384',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('22','Hải Phương Tô','0','ThnhCng.H81@hotmail.com','024 5176 3533',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('23','Huy Tường Tô','0','LiuOanh.Trng@hotmail.com','028 1997 8601',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('24','Nhã Yến Tô','0','CngHiu27@yahoo.com','0234 0783 5816',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('25','Kiên Cường Tăng MD','0','KimQuyn_Vng@yahoo.com','026 7006 4223',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('26','Nhã Hồng Lâm','0','DuyHng56@hotmail.com','029 7852 2092',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('27','Bảo Anh Lâm','0','GingUyn.Ng25@gmail.com','021 9353 3989',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('28','Việt Cương Dương','0','DLm.Trnh39@gmail.com','027 2231 3461',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('29','Kiên Bình Bùi','0','ThDuyt28@gmail.com','0269 0985 0461',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('3','Hoàng Duệ Trần I','0','NhAnh_Mai@hotmail.com','026 9470 9508',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('30','Mỹ Ngọc Dương','0','KhiTm_Vng@yahoo.com','022 4287 3879',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('31','Kim Sa Phạm','0','DuyBo_Vng@gmail.com','0296 0190 0409',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('32','Mr. Yến Loan Vương','0','VitDng_L@hotmail.com','028 5899 0562',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('33','Phương Tâm Trần','0','KiuDim.H@yahoo.com','023 9445 8427',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('34','Thanh Thư Bùi','0','ThanhVy13@gmail.com','0298 1083 6068',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('35','Ms. Quốc Hải Phùng','0','BoGiang_T@gmail.com','026 6671 2725',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('36','Miss Ngọc Khanh Phan','0','Thnht_Vng36@yahoo.com','0256 1592 5165',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('37','Thượng Cường Hoàng','0','ThinKim41@hotmail.com','0217 5648 8211',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('38','Tiểu Mi Trịnh','0','KhnhGiang18@gmail.com','029 1028 1191',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('39','Chấn Hùng Phùng','0','DuyNhng_H@gmail.com','0221 7287 8299',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('4','Ms. Thành Thiện Vũ','0','Tn.Ng@hotmail.com','026 3632 1049',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('40','Ánh Tuyết Đặng PhD','0','LanChi5@gmail.com','0228 8621 2541',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('41','Nguyễn Minh Dũng','0','nguyenminhdungtd98@gmail.com','0763934399',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('42','Nguyễn Văn Ký','0','nguyenky@gmail.com','03428284832',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('43','Nguyễn Võ Công Toàn','0','congtoan@gmail.com','0957839282',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('44','Thiên Thảo','0','thienthao@gmail.com','094883123',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('45','Vũ Thị Thu Thảo','0','thuthao@gmail.com','0948843123',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('46','Nguyễn Duỹ Long','0','duylong@gmail.com','0948843123',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('47','Nguyễn Thanh Tốt','0','thanhtot@gmail.com','0948843123',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('48','Minh Hồ','0','minhho@gmail.com','091263823',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('5','Ðức Thành Lê','0','PhngUyn65@yahoo.com','0279 4142 4708',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('6','Thượng Nghị Hồ','0','nhKim43@hotmail.com','0256 6920 8794',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('7','Ms. Hưng Ðạo Nguyễn','0','ThuDuyn_Phan@hotmail.com','0245 1679 8200',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('8','Việt Dũng Dương','0','KimThng_Vng14@hotmail.com','026 2312 7134',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL),('9','Hiếu Phong Dương','0','DngKhnh.Phan@yahoo.com','0295 6465 3055',NULL,NULL,NULL,NULL,NULL,NULL,1,NULL);
 /*!40000 ALTER TABLE `employees` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -214,17 +244,17 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `menu`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `menu` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `parent_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `url` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `order_index` int(11) DEFAULT NULL,
+  `order_index` int DEFAULT NULL,
   `create_date` timestamp NULL DEFAULT NULL,
   `update_date` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -242,12 +272,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `options`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `options` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -266,12 +296,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `permissions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `permissions` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -290,12 +320,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `positions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `positions` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `department_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `is_manager` tinyint(4) DEFAULT NULL,
+  `is_manager` tinyint DEFAULT NULL,
   `create_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `modify_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `create_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -309,7 +339,7 @@ CREATE TABLE `positions` (
   CONSTRAINT `fk_chucvu_phongban1` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`),
   CONSTRAINT `fk_positions_teams1` FOREIGN KEY (`team_id`) REFERENCES `teams` (`id`),
   CONSTRAINT `fk_role_position` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -328,7 +358,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `positions_employees`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `positions_employees` (
   `employee_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `position_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -337,7 +367,7 @@ CREATE TABLE `positions_employees` (
   KEY `fk_employees_has_positions_employees1_idx` (`employee_id`),
   CONSTRAINT `fk_employees_has_positions_employees1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`),
   CONSTRAINT `fk_employees_has_positions_positions1` FOREIGN KEY (`position_id`) REFERENCES `positions` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -351,25 +381,52 @@ INSERT INTO `positions_employees` VALUES ('41','1'),('45','10'),('12','11'),('2'
 UNLOCK TABLES;
 
 --
+-- Table structure for table `positions_has_employees`
+--
+
+DROP TABLE IF EXISTS `positions_has_employees`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `positions_has_employees` (
+  `position_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `employee_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`employee_id`,`position_id`),
+  KEY `FKkw3pwwbglkt6tjm01metfi6bx` (`position_id`),
+  CONSTRAINT `FKk92oo7kakp24nt1iyrp0i11q4` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`),
+  CONSTRAINT `FKkw3pwwbglkt6tjm01metfi6bx` FOREIGN KEY (`position_id`) REFERENCES `positions` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `positions_has_employees`
+--
+
+LOCK TABLES `positions_has_employees` WRITE;
+/*!40000 ALTER TABLE `positions_has_employees` DISABLE KEYS */;
+/*!40000 ALTER TABLE `positions_has_employees` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `proposal_details`
 --
 
 DROP TABLE IF EXISTS `proposal_details`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `proposal_details` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `proposal_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `proposal_detail_index` int(11) DEFAULT NULL,
+  `proposal_detail_index` int DEFAULT NULL,
   `content` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `create_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `modify_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `create_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `modify_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `field_id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_proposal_details_proposals1_idx` (`proposal_id`),
   CONSTRAINT `fk_proposal_details_proposals1` FOREIGN KEY (`proposal_id`) REFERENCES `proposals` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -378,7 +435,7 @@ CREATE TABLE `proposal_details` (
 
 LOCK TABLES `proposal_details` WRITE;
 /*!40000 ALTER TABLE `proposal_details` DISABLE KEYS */;
-INSERT INTO `proposal_details` VALUES ('10','9',1,'Nón mây thế phá nước bơi.',NULL,NULL,NULL,NULL),('11','10',1,'Đỏ ghét chỉ ờ mướn viết chết thế.',NULL,NULL,NULL,NULL),('12','11',1,'Viết viết một hai.',NULL,NULL,NULL,NULL),('13','12',1,'Giày độc thuê gió nghỉ đánh được mây là ngọt.',NULL,NULL,NULL,NULL),('14','13',1,'Việc nhà lỗi ba vá leo tám.',NULL,NULL,NULL,NULL),('15','14',1,'Bạn vẽ núi.',NULL,NULL,NULL,NULL),('16','15',1,'Ba cái tàu.',NULL,NULL,NULL,NULL),('17','16',1,'Thương tôi yêu chìm tô thì bè tím cái.',NULL,NULL,NULL,NULL),('18','17',1,'Tôi một may em một ghét thích núi.',NULL,NULL,NULL,NULL),('19','18',1,'Xanh đang sáu vàng con vá được.',NULL,NULL,NULL,NULL),('2','1',1,'Hết bàn yêu em gió đồng hương.',NULL,NULL,NULL,NULL),('20','19',1,'Mượn tám thích tám xuồng phá ba được bàn.',NULL,NULL,NULL,NULL),('21','20',1,'Ừ hương thuyền yêu viết hết khoan ờ việc.',NULL,NULL,NULL,NULL),('22','21',1,'Anh sáu phá thế máy dép cái đánh.',NULL,NULL,NULL,NULL),('23','22',1,'Đâu dép xuồng mướn biển thích bàn.',NULL,NULL,NULL,NULL),('24','23',1,'Nghỉ anh đạp kim bốn không.',NULL,NULL,NULL,NULL),('25','24',1,'Thuyền bốn hết đạp hai.',NULL,NULL,NULL,NULL),('26','25',1,'Thì việc vẽ.',NULL,NULL,NULL,NULL),('27','26',1,'Thuê đánh máy dép tím thế bè thuê mướn.',NULL,NULL,NULL,NULL),('28','27',1,'Giày biết khâu hương biển thôi hai em tô là.',NULL,NULL,NULL,NULL),('29','28',1,'Vàng nón khoan đập á.',NULL,NULL,NULL,NULL),('3','2',1,'Hương là trăng làm đỏ thế trăng chìm khoảng.',NULL,NULL,NULL,NULL),('30','29',1,'Đạp á đỏ khoan máy một ghét.',NULL,NULL,NULL,NULL),('31','30',1,'Khoảng ghế đá chỉ tô.',NULL,NULL,NULL,NULL),('32','30',2,'Đã xuồng em giày được xe.\nBiết mười đang nón mua lầu làm tủ.',NULL,NULL,NULL,NULL),('33','30',3,'3010',NULL,NULL,NULL,NULL),('34','30',4,'Tàu đỏ tô trăng tám lỗi gió.\nBốn khâu biết trăng khoảng ác gió mướn tủ chín.\nHết mười nước thì tám bàn.\nNhà tám ác.\nThì dép bàn.',NULL,NULL,NULL,NULL),('4','3',1,'Ghế con tui may xanh xuồng một mượn bốn đánh.',NULL,NULL,NULL,NULL),('5','4',1,'Chín tàu nước bè chìm áo.',NULL,NULL,NULL,NULL),('6','5',1,'Mua giết tím em hàng cửa áo.',NULL,NULL,NULL,NULL),('7','6',1,'Vẽ lỗi hết trời leo em núi làm mười cửa.',NULL,NULL,NULL,NULL),('8','7',1,'Hai hai bốn bốn đồng mua giày ghế hết.',NULL,NULL,NULL,NULL),('9','8',1,'Đánh em nón hàng hàng.',NULL,NULL,NULL,NULL);
+INSERT INTO `proposal_details` VALUES ('10','9',1,'Nón mây thế phá nước bơi.',NULL,NULL,NULL,NULL,NULL),('11','10',1,'Đỏ ghét chỉ ờ mướn viết chết thế.',NULL,NULL,NULL,NULL,NULL),('12','11',1,'Viết viết một hai.',NULL,NULL,NULL,NULL,NULL),('13','12',1,'Giày độc thuê gió nghỉ đánh được mây là ngọt.',NULL,NULL,NULL,NULL,NULL),('14','13',1,'Việc nhà lỗi ba vá leo tám.',NULL,NULL,NULL,NULL,NULL),('15','14',1,'Bạn vẽ núi.',NULL,NULL,NULL,NULL,NULL),('16','15',1,'Ba cái tàu.',NULL,NULL,NULL,NULL,NULL),('17','16',1,'Thương tôi yêu chìm tô thì bè tím cái.',NULL,NULL,NULL,NULL,NULL),('18','17',1,'Tôi một may em một ghét thích núi.',NULL,NULL,NULL,NULL,NULL),('19','18',1,'Xanh đang sáu vàng con vá được.',NULL,NULL,NULL,NULL,NULL),('2','1',1,'Hết bàn yêu em gió đồng hương.',NULL,NULL,NULL,NULL,NULL),('20','19',1,'Mượn tám thích tám xuồng phá ba được bàn.',NULL,NULL,NULL,NULL,NULL),('21','20',1,'Ừ hương thuyền yêu viết hết khoan ờ việc.',NULL,NULL,NULL,NULL,NULL),('22','21',1,'Anh sáu phá thế máy dép cái đánh.',NULL,NULL,NULL,NULL,NULL),('23','22',1,'Đâu dép xuồng mướn biển thích bàn.',NULL,NULL,NULL,NULL,NULL),('24','23',1,'Nghỉ anh đạp kim bốn không.',NULL,NULL,NULL,NULL,NULL),('25','24',1,'Thuyền bốn hết đạp hai.',NULL,NULL,NULL,NULL,NULL),('26','25',1,'Thì việc vẽ.',NULL,NULL,NULL,NULL,NULL),('27','26',1,'Thuê đánh máy dép tím thế bè thuê mướn.',NULL,NULL,NULL,NULL,NULL),('28','27',1,'Giày biết khâu hương biển thôi hai em tô là.',NULL,NULL,NULL,NULL,NULL),('29','28',1,'Vàng nón khoan đập á.',NULL,NULL,NULL,NULL,NULL),('3','2',1,'Hương là trăng làm đỏ thế trăng chìm khoảng.',NULL,NULL,NULL,NULL,NULL),('30','29',1,'Đạp á đỏ khoan máy một ghét.',NULL,NULL,NULL,NULL,NULL),('31','30',1,'Khoảng ghế đá chỉ tô.',NULL,NULL,NULL,NULL,NULL),('32','30',2,'Đã xuồng em giày được xe.\nBiết mười đang nón mua lầu làm tủ.',NULL,NULL,NULL,NULL,NULL),('33','30',3,'3010',NULL,NULL,NULL,NULL,NULL),('34','30',4,'Tàu đỏ tô trăng tám lỗi gió.\nBốn khâu biết trăng khoảng ác gió mướn tủ chín.\nHết mười nước thì tám bàn.\nNhà tám ác.\nThì dép bàn.',NULL,NULL,NULL,NULL,NULL),('4','3',1,'Ghế con tui may xanh xuồng một mượn bốn đánh.',NULL,NULL,NULL,NULL,NULL),('5','4',1,'Chín tàu nước bè chìm áo.',NULL,NULL,NULL,NULL,NULL),('6','5',1,'Mua giết tím em hàng cửa áo.',NULL,NULL,NULL,NULL,NULL),('7','6',1,'Vẽ lỗi hết trời leo em núi làm mười cửa.',NULL,NULL,NULL,NULL,NULL),('8','7',1,'Hai hai bốn bốn đồng mua giày ghế hết.',NULL,NULL,NULL,NULL,NULL),('9','8',1,'Đánh em nón hàng hàng.',NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `proposal_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -388,7 +445,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `proposal_permissions`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `proposal_permissions` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `proposal_type_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -404,7 +461,7 @@ CREATE TABLE `proposal_permissions` (
   CONSTRAINT `fk_proposal_permissions_employees1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`),
   CONSTRAINT `fk_proposal_permissions_positions1` FOREIGN KEY (`position_id`) REFERENCES `positions` (`id`),
   CONSTRAINT `fk_proposal_permissions_proposal_types1` FOREIGN KEY (`proposal_type_id`) REFERENCES `proposal_types` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -423,23 +480,27 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `proposal_type_details`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `proposal_type_details` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `proposal_types_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `proposal_type_index` int(11) DEFAULT NULL,
+  `proposal_type_index` int DEFAULT NULL,
   `field_name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `data_type_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `create_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `modify_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `create_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `modify_date` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `field_id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `proposal_type_id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_type_details_data_types1_idx` (`data_type_id`),
   KEY `fk_proposal_type_details_proposal_types1_idx` (`proposal_types_id`),
+  KEY `FKdvba7s6h0uitxnu1rh5vm2r1r` (`proposal_type_id`),
   CONSTRAINT `fk_proposal_type_details_proposal_types1` FOREIGN KEY (`proposal_types_id`) REFERENCES `proposal_types` (`id`),
-  CONSTRAINT `fk_type_details_data_types1` FOREIGN KEY (`data_type_id`) REFERENCES `data_types` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  CONSTRAINT `fk_type_details_data_types1` FOREIGN KEY (`data_type_id`) REFERENCES `data_types` (`id`),
+  CONSTRAINT `FKdvba7s6h0uitxnu1rh5vm2r1r` FOREIGN KEY (`proposal_type_id`) REFERENCES `proposal_types` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -448,7 +509,7 @@ CREATE TABLE `proposal_type_details` (
 
 LOCK TABLES `proposal_type_details` WRITE;
 /*!40000 ALTER TABLE `proposal_type_details` DISABLE KEYS */;
-INSERT INTO `proposal_type_details` VALUES ('1','1',1,'Mục đích/Lý do','1',NULL,NULL,NULL,NULL),('2','1',2,'Tình trạng hư hỏng','2',NULL,NULL,NULL,NULL),('3','1',3,'Số phòng','1',NULL,NULL,NULL,NULL),('4','1',4,'Ghi chú','2',NULL,NULL,NULL,NULL),('5','2',1,'Mục đích/Lý do','1',NULL,NULL,NULL,NULL),('6','2',2,'Tên vật tư','1',NULL,NULL,NULL,NULL),('7','2',3,'Số lượng','1',NULL,NULL,NULL,NULL),('8','2',4,'Đơn gía','1',NULL,NULL,NULL,NULL);
+INSERT INTO `proposal_type_details` VALUES ('1','1',1,'Mục đích/Lý do','1',NULL,NULL,NULL,NULL,NULL,NULL),('2','1',2,'Tình trạng hư hỏng','2',NULL,NULL,NULL,NULL,NULL,NULL),('3','1',3,'Số phòng','1',NULL,NULL,NULL,NULL,NULL,NULL),('4','1',4,'Ghi chú','2',NULL,NULL,NULL,NULL,NULL,NULL),('5','2',1,'Mục đích/Lý do','1',NULL,NULL,NULL,NULL,NULL,NULL),('6','2',2,'Tên vật tư','1',NULL,NULL,NULL,NULL,NULL,NULL),('7','2',3,'Số lượng','1',NULL,NULL,NULL,NULL,NULL,NULL),('8','2',4,'Đơn gía','1',NULL,NULL,NULL,NULL,NULL,NULL);
 /*!40000 ALTER TABLE `proposal_type_details` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -458,13 +519,13 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `proposal_types`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `proposal_types` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `active_flag` tinyint(4) DEFAULT NULL,
+  `active_flag` tinyint DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -483,7 +544,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `proposals`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `proposals` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `proposal_type_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -496,7 +557,7 @@ CREATE TABLE `proposals` (
   CONSTRAINT `fk_dexuat_TrangThai1` FOREIGN KEY (`status_id`) REFERENCES `statuses` (`id`),
   CONSTRAINT `fk_proposals_employees1` FOREIGN KEY (`creator_id`) REFERENCES `employees` (`id`),
   CONSTRAINT `fk_proposals_proposal_types1` FOREIGN KEY (`proposal_type_id`) REFERENCES `proposal_types` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -515,7 +576,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `role_details`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `role_details` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `option_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -532,7 +593,7 @@ CREATE TABLE `role_details` (
   CONSTRAINT `fk_role_details_options1` FOREIGN KEY (`option_id`) REFERENCES `options` (`id`),
   CONSTRAINT `fk_role_details_permissions1` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`),
   CONSTRAINT `fk_role_details_roles1` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -551,12 +612,15 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `roles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `roles` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+  `position_id` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FKrg8eactfnoo2fias560gvgou6` (`position_id`),
+  CONSTRAINT `FKrg8eactfnoo2fias560gvgou6` FOREIGN KEY (`position_id`) REFERENCES `positions` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -565,7 +629,7 @@ CREATE TABLE `roles` (
 
 LOCK TABLES `roles` WRITE;
 /*!40000 ALTER TABLE `roles` DISABLE KEYS */;
-INSERT INTO `roles` VALUES ('1','Điều hành các hoạt động của KTX'),('2','Duyệt các đề xuất nghỉ phép của sinh viên'),('3','Giải quyết các vấn đề tiền ăn và học phí'),('4','Quản lý cơ sở vật chất, an ninh KTX'),('5','Sinh viên'),('6','Nhận đề xuất và thực hiện sửa chữa hư hỏng cho các phòng'),('7','Quản lý, chấm điểm rèn luyện cho SV và điểm danh SV');
+INSERT INTO `roles` VALUES ('1','Điều hành các hoạt động của KTX',NULL),('2','Duyệt các đề xuất nghỉ phép của sinh viên',NULL),('3','Giải quyết các vấn đề tiền ăn và học phí',NULL),('4','Quản lý cơ sở vật chất, an ninh KTX',NULL),('5','Sinh viên',NULL),('6','Nhận đề xuất và thực hiện sửa chữa hư hỏng cho các phòng',NULL),('7','Quản lý, chấm điểm rèn luyện cho SV và điểm danh SV',NULL);
 /*!40000 ALTER TABLE `roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -575,12 +639,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `statuses`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `statuses` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -599,7 +663,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `task_details`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `task_details` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `receiver_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -615,7 +679,7 @@ CREATE TABLE `task_details` (
   KEY `fk_task_details_tasks1_idx` (`task_id`),
   CONSTRAINT `fk_GiaoViec_nhanvien1` FOREIGN KEY (`receiver_id`) REFERENCES `employees` (`id`),
   CONSTRAINT `fk_task_details_tasks1` FOREIGN KEY (`task_id`) REFERENCES `tasks` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -634,7 +698,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `tasks`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `tasks` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `status_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -644,7 +708,7 @@ CREATE TABLE `tasks` (
   KEY `fk_tasks_employees1_idx` (`creator_id`),
   CONSTRAINT `fk_tasks_employees1` FOREIGN KEY (`creator_id`) REFERENCES `employees` (`id`),
   CONSTRAINT `fk_tasks_statuses1` FOREIGN KEY (`status_id`) REFERENCES `statuses` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -663,12 +727,12 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `teams`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `teams` (
   `id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -686,7 +750,7 @@ UNLOCK TABLES;
 
 DROP TABLE IF EXISTS `teams_employees`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
+/*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `teams_employees` (
   `teams_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `employees_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
@@ -695,7 +759,7 @@ CREATE TABLE `teams_employees` (
   KEY `fk_teams_has_employees_teams1_idx` (`teams_id`),
   CONSTRAINT `fk_teams_has_employees_employees1` FOREIGN KEY (`employees_id`) REFERENCES `employees` (`id`),
   CONSTRAINT `fk_teams_has_employees_teams1` FOREIGN KEY (`teams_id`) REFERENCES `teams` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -716,4 +780,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-12-12 19:50:07
+-- Dump completed on 2022-01-02 23:16:32
