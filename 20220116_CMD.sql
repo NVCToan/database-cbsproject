@@ -383,32 +383,6 @@ INSERT INTO `positions_employees` VALUES (60,'1','11'),(80,'1','14'),(20,'1','17
 UNLOCK TABLES;
 
 --
--- Table structure for table `positions_has_employees`
---
-
-DROP TABLE IF EXISTS `positions_has_employees`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `positions_has_employees` (
-  `position_id` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  `employee_id` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
-  PRIMARY KEY (`position_id`,`employee_id`),
-  KEY `FKk92oo7kakp24nt1iyrp0i11q4` (`employee_id`),
-  CONSTRAINT `FKk92oo7kakp24nt1iyrp0i11q4` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`),
-  CONSTRAINT `FKkw3pwwbglkt6tjm01metfi6bx` FOREIGN KEY (`position_id`) REFERENCES `positions` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `positions_has_employees`
---
-
-LOCK TABLES `positions_has_employees` WRITE;
-/*!40000 ALTER TABLE `positions_has_employees` DISABLE KEYS */;
-/*!40000 ALTER TABLE `positions_has_employees` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
 -- Table structure for table `proposal_details`
 --
 
@@ -812,4 +786,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-01-16 11:28:27
+-- Dump completed on 2022-01-16 13:37:10
