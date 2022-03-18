@@ -162,7 +162,7 @@ CREATE TABLE `departments` (
   `id` int NOT NULL AUTO_INCREMENT,
   `code` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `name` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
-  `farther_department_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
+  `farther_department_id` int DEFAULT NULL,
   `manager_id` varchar(10) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `create_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   `modify_by` varchar(45) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -180,7 +180,7 @@ CREATE TABLE `departments` (
 
 LOCK TABLES `departments` WRITE;
 /*!40000 ALTER TABLE `departments` DISABLE KEYS */;
-INSERT INTO `departments` VALUES (1,'1','Ban Quản Lý KTX Cỏ May','0','0',NULL,NULL,NULL,NULL,'Quản lý hồ sơ, học phí sinh viên'),(2,'2','Bảo trì - Bảo dưỡng CSVC KTX','1','0',NULL,NULL,NULL,NULL,NULL),(3,'3','Đội sửa chữa','2','0',NULL,NULL,NULL,NULL,NULL),(4,'4','Tầng 1','2','0',NULL,NULL,NULL,NULL,NULL),(5,'5','Tầng 2','2','0',NULL,NULL,NULL,NULL,NULL),(6,'6','Tầng 3','2','0',NULL,NULL,NULL,NULL,NULL),(7,'7','Tầng trệt','2','0',NULL,NULL,NULL,NULL,NULL),(8,'8','Kiểm tra và giám sát sinh viên','1','0',NULL,NULL,NULL,NULL,NULL),(9,'9','Tổ chức sự kiện','1','0',NULL,NULL,NULL,NULL,NULL),(10,'10','Truyền thông','1','0',NULL,NULL,NULL,NULL,NULL),(11,'11','Sinh viên','1','0',NULL,NULL,NULL,NULL,NULL),(22,'BQLIT','Ban Quản Lý IT','0','null',NULL,NULL,NULL,NULL,NULL),(24,'BQLITR','Ban Quản Lý IT','0','null',NULL,NULL,NULL,NULL,'Doi it'),(25,'BQLITRR','Ban Quản Lý IT','0','null',NULL,NULL,NULL,NULL,'Đội IT ký túc xá');
+INSERT INTO `departments` VALUES (1,'1','Ban Quản Lý KTX Cỏ May',0,'0',NULL,NULL,NULL,NULL,'Quản lý hồ sơ, học phí sinh viên'),(2,'2','Bảo trì - Bảo dưỡng CSVC KTX',1,'0',NULL,NULL,NULL,NULL,NULL),(3,'3','Đội sửa chữa',2,'0',NULL,NULL,NULL,NULL,NULL),(4,'4','Tầng 1',2,'0',NULL,NULL,NULL,NULL,NULL),(5,'5','Tầng 2',2,'0',NULL,NULL,NULL,NULL,NULL),(6,'6','Tầng 3',2,'0',NULL,NULL,NULL,NULL,NULL),(7,'7','Tầng trệt',2,'0',NULL,NULL,NULL,NULL,NULL),(8,'8','Kiểm tra và giám sát sinh viên',1,'0',NULL,NULL,NULL,NULL,NULL),(9,'9','Tổ chức sự kiện',1,'0',NULL,NULL,NULL,NULL,NULL),(10,'10','Truyền thông',1,'0',NULL,NULL,NULL,NULL,NULL),(11,'11','Sinh viên',1,'0',NULL,NULL,NULL,NULL,NULL),(22,'BQLIT','Ban Quản Lý IT',0,'null',NULL,NULL,NULL,NULL,NULL),(24,'BQLITR','Ban Quản Lý IT',0,'null',NULL,NULL,NULL,NULL,'Doi it'),(25,'BQLITRR','Ban Quản Lý IT',0,'null',NULL,NULL,NULL,NULL,'Đội IT ký túc xá');
 /*!40000 ALTER TABLE `departments` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -774,4 +774,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-03-18 19:13:53
+-- Dump completed on 2022-03-18 22:41:38
