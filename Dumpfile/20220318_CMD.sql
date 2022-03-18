@@ -171,7 +171,7 @@ CREATE TABLE `departments` (
   `description` varchar(200) CHARACTER SET utf8 COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`code`)
-) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -180,7 +180,7 @@ CREATE TABLE `departments` (
 
 LOCK TABLES `departments` WRITE;
 /*!40000 ALTER TABLE `departments` DISABLE KEYS */;
-INSERT INTO `departments` VALUES (1,'1','Ban Quản Lý KTX Cỏ May','0','0',NULL,NULL,NULL,NULL,NULL),(2,'2','Bảo trì - Bảo dưỡng CSVC KTX','1','0',NULL,NULL,NULL,NULL,NULL),(3,'3','Đội sửa chữa','2','0',NULL,NULL,NULL,NULL,NULL),(4,'4','Tầng 1','2','0',NULL,NULL,NULL,NULL,NULL),(5,'5','Tầng 2','2','0',NULL,NULL,NULL,NULL,NULL),(6,'6','Tầng 3','2','0',NULL,NULL,NULL,NULL,NULL),(7,'7','Tầng trệt','2','0',NULL,NULL,NULL,NULL,NULL),(8,'8','Kiểm tra và giám sát sinh viên','1','0',NULL,NULL,NULL,NULL,NULL),(9,'9','Tổ chức sự kiện','1','0',NULL,NULL,NULL,NULL,NULL),(10,'10','Truyền thông','1','0',NULL,NULL,NULL,NULL,NULL),(11,'11','Sinh viên','1','0',NULL,NULL,NULL,NULL,NULL);
+INSERT INTO `departments` VALUES (1,'1','Ban Quản Lý KTX Cỏ May','0','0',NULL,NULL,NULL,NULL,'Quản lý hồ sơ, học phí sinh viên'),(2,'2','Bảo trì - Bảo dưỡng CSVC KTX','1','0',NULL,NULL,NULL,NULL,NULL),(3,'3','Đội sửa chữa','2','0',NULL,NULL,NULL,NULL,NULL),(4,'4','Tầng 1','2','0',NULL,NULL,NULL,NULL,NULL),(5,'5','Tầng 2','2','0',NULL,NULL,NULL,NULL,NULL),(6,'6','Tầng 3','2','0',NULL,NULL,NULL,NULL,NULL),(7,'7','Tầng trệt','2','0',NULL,NULL,NULL,NULL,NULL),(8,'8','Kiểm tra và giám sát sinh viên','1','0',NULL,NULL,NULL,NULL,NULL),(9,'9','Tổ chức sự kiện','1','0',NULL,NULL,NULL,NULL,NULL),(10,'10','Truyền thông','1','0',NULL,NULL,NULL,NULL,NULL),(11,'11','Sinh viên','1','0',NULL,NULL,NULL,NULL,NULL),(22,'BQLIT','Ban Quản Lý IT','0','null',NULL,NULL,NULL,NULL,NULL),(24,'BQLITR','Ban Quản Lý IT','0','null',NULL,NULL,NULL,NULL,'Doi it'),(25,'BQLITRR','Ban Quản Lý IT','0','null',NULL,NULL,NULL,NULL,'Đội IT ký túc xá');
 /*!40000 ALTER TABLE `departments` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -336,7 +336,7 @@ CREATE TABLE `positions` (
   CONSTRAINT `fk_chucvu_phongban1` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`),
   CONSTRAINT `fk_positions_teams1` FOREIGN KEY (`team_id`) REFERENCES `teams` (`id`),
   CONSTRAINT `fk_role_position` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=55 DEFAULT CHARSET=utf8mb3 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -345,7 +345,7 @@ CREATE TABLE `positions` (
 
 LOCK TABLES `positions` WRITE;
 /*!40000 ALTER TABLE `positions` DISABLE KEYS */;
-INSERT INTO `positions` VALUES (1,'1','Thành viên ban quản lý KTX',1,1,NULL,NULL,NULL,NULL,NULL,1),(2,'2','Giám thị',1,0,NULL,NULL,NULL,NULL,NULL,2),(3,'3','Kế toán',1,0,NULL,NULL,NULL,NULL,NULL,3),(4,'4','Trưởng đội 1',2,1,NULL,NULL,NULL,NULL,NULL,4),(5,'5','Thành viên',3,0,NULL,NULL,NULL,NULL,NULL,5),(6,'6','Thành viên',4,0,NULL,NULL,NULL,NULL,NULL,5),(7,'7','Trưởng tầng 1',4,1,NULL,NULL,NULL,NULL,NULL,6),(8,'8','Trưởng phòng sinh viên tầng 1',4,0,NULL,NULL,NULL,NULL,NULL,5),(9,'9','Thành viên',5,0,NULL,NULL,NULL,NULL,NULL,5),(10,'10','Trưởng tầng 2',5,1,NULL,NULL,NULL,NULL,NULL,6),(11,'11','Trưởng phòng sinh viên tầng 2',5,0,NULL,NULL,NULL,NULL,NULL,5),(12,'12','Thành viên',6,0,NULL,NULL,NULL,NULL,NULL,5),(13,'13','Trưởng tầng 3',6,1,NULL,NULL,NULL,NULL,NULL,6),(14,'14','Trưởng phòng sinh viên tầng 3',6,0,NULL,NULL,NULL,NULL,NULL,5),(15,'15','Thành viên',7,0,NULL,NULL,NULL,NULL,NULL,5),(16,'16','Trưởng tầng trệt',7,1,NULL,NULL,NULL,NULL,NULL,6),(17,'17','Trưởng phòng sinh viên tầng trệt',7,0,NULL,NULL,NULL,NULL,NULL,5),(18,'18','Thành viên',8,0,NULL,NULL,NULL,NULL,NULL,5),(19,'19','Trưởng đội 2',8,1,NULL,NULL,NULL,NULL,NULL,7),(20,'20','Tesst',NULL,0,NULL,NULL,NULL,NULL,1,5);
+INSERT INTO `positions` VALUES (1,'1','Thành viên ban quản lý KTX',1,1,NULL,NULL,NULL,NULL,NULL,1),(2,'2','Giám thị',1,0,NULL,NULL,NULL,NULL,NULL,2),(3,'3','Kế toán',1,0,NULL,NULL,NULL,NULL,NULL,3),(4,'4','Trưởng đội 1',2,1,NULL,NULL,NULL,NULL,NULL,4),(5,'5','Thành viên',3,0,NULL,NULL,NULL,NULL,NULL,5),(6,'6','Thành viên',4,0,NULL,NULL,NULL,NULL,NULL,5),(7,'7','Trưởng tầng 1',4,1,NULL,NULL,NULL,NULL,NULL,6),(8,'8','Trưởng phòng sinh viên tầng 1',4,0,NULL,NULL,NULL,NULL,NULL,5),(9,'9','Thành viên',5,0,NULL,NULL,NULL,NULL,NULL,5),(10,'10','Trưởng tầng 2',5,1,NULL,NULL,NULL,NULL,NULL,6),(11,'11','Trưởng phòng sinh viên tầng 2',5,0,NULL,NULL,NULL,NULL,NULL,5),(12,'12','Thành viên',6,0,NULL,NULL,NULL,NULL,NULL,5),(13,'13','Trưởng tầng 3',6,1,NULL,NULL,NULL,NULL,NULL,6),(14,'14','Trưởng phòng sinh viên tầng 3',6,0,NULL,NULL,NULL,NULL,NULL,5),(15,'15','Thành viên',7,0,NULL,NULL,NULL,NULL,NULL,5),(16,'16','Trưởng tầng trệt',7,1,NULL,NULL,NULL,NULL,NULL,6),(17,'17','Trưởng phòng sinh viên tầng trệt',7,0,NULL,NULL,NULL,NULL,NULL,5),(18,'18','Thành viên',8,0,NULL,NULL,NULL,NULL,NULL,5),(19,'19','Trưởng đội 2',8,1,NULL,NULL,NULL,NULL,NULL,7),(20,'20','Tesst',NULL,0,NULL,NULL,NULL,NULL,1,5),(46,'BQLIT1','Trưởng đội IT',22,1,NULL,NULL,NULL,NULL,NULL,1),(47,'BQLIT2','Đội phó',22,0,NULL,NULL,NULL,NULL,NULL,2),(48,'BQLIT3','Kế toán',22,0,NULL,NULL,NULL,NULL,NULL,3),(49,'BQLITR1','Trưởng đội IT',24,1,NULL,NULL,NULL,NULL,NULL,1),(50,'BQLITR2','Đội phó',24,0,NULL,NULL,NULL,NULL,NULL,2),(51,'BQLITR3','Kế toán',24,0,NULL,NULL,NULL,NULL,NULL,3),(52,'BQLITRR1','Trưởng đội IT',25,1,NULL,NULL,NULL,NULL,NULL,1),(53,'BQLITRR2','Đội phó',25,0,NULL,NULL,NULL,NULL,NULL,2),(54,'BQLITRR3','Kế toán',25,0,NULL,NULL,NULL,NULL,NULL,3);
 /*!40000 ALTER TABLE `positions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -774,4 +774,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-03-18  1:21:30
+-- Dump completed on 2022-03-18 19:13:53
