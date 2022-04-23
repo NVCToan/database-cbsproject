@@ -17,6 +17,9 @@ ALTER TABLE cmd.proposals_permissions AUTO_INCREMENT = 1;
 ALTER TABLE cmd.approval_step_details AUTO_INCREMENT = 1;
 ALTER TABLE cmd.proposals AUTO_INCREMENT = 1;
 ALTER TABLE cmd.proposal_details AUTO_INCREMENT = 1;
+ALTER TABLE cmd.teams AUTO_INCREMENT = 1;
+ALTER TABLE cmd.messages AUTO_INCREMENT = 1;
+ALTER TABLE cmd.departments_employees AUTO_INCREMENT = 1;
 
 REPLACE INTO departments(code,name,farther_department_id,manager_id) VALUES (1,'Ban Quản Lý KTX Cỏ May','0',0);
 REPLACE INTO departments(code,name,farther_department_id,manager_id) VALUES (2,'Bảo trì - Bảo dưỡng CSVC KTX','1',0);
