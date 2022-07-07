@@ -2,6 +2,8 @@ Step 1: Open command prompt (Run administrator)
 Step 2: run: "cd <path>\MySQL Server 8.0\bin\ && mysqldump -u<username> -p<password> --databases <database name> -r <dump_file_name>.sql && xcopy /y <path>\MySQL Server 8.0\bin\20211212_CMD.sql <path to save dump file>"
 
 Example: 
-cd "C:\Program Files\MySQL\MySQL Server 8.0\bin\" && mysqldump -uroot -p123456 --databases cmd -r 20211212_CMD.sql && xcopy /y "C:\Program Files\MySQL\MySQL Server 8.0\bin\20211212_CMD.sql" "D:\StudyDocuments\Code\MySQL\database-cbsproject\database-cbsproject"
+cd "C:\Program Files\MySQL\MySQL Server 8.0\bin\" && mysqldump -uroot -p123456 --databases cmd -r 20220708_CMD.sql
+
+&& xcopy /y "C:\Program Files\MySQL\MySQL Server 8.0\bin\20211212_CMD.sql" "D:\StudyDocuments\Code\MySQL\database-cbsproject\database-cbsproject"
 
 Important: If your path have contain space char, you should put your path in "<path>". 
