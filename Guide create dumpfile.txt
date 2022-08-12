@@ -6,4 +6,10 @@ cd "C:\Program Files\MySQL\MySQL Server 8.0\bin\" && mysqldump -uroot -p123456 -
 
 && xcopy /y "C:\Program Files\MySQL\MySQL Server 8.0\bin\20211212_CMD.sql" "D:\StudyDoc\Code\ProjectJava\CMD-Project\database-cbsproject"
 
+dump2:
+cd "C:\Program Files\MySQL\MySQL Server 8.0\bin\" && mysqldump -uroot -p123456 --default-character-set=utf8 -N --routines --skip-triggers --databases cmd -r 20220812_CMD.sql
+ALTER TABLE departments CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE positions CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+ALTER TABLE employees CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci;
+
 Important: If your path have contain space char, you should put your path in "<path>". 
