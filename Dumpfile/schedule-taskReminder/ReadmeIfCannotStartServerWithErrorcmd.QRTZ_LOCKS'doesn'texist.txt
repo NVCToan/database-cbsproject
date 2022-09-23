@@ -1,0 +1,1 @@
+Run dump and delete all tatble start with QRTZ > Run script in quartz_tables.sql
